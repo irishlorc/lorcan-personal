@@ -11,11 +11,8 @@ export function About() {
   const { link } = useSite();
   return (
     <div className="grid" data-screen-label="About">
-      <Card at="a_title" aria-labelledby="a-title" className="stack between" style={{ padding: 'clamp(24px,3.4vw,56px)', gap: 'clamp(36px,5vw,72px)' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', gap: 16 }}>
-          <span className="label">About</span>
-          <span className="label">A short profile</span>
-        </div>
+      <Card at="a_title" aria-labelledby="a-title" className="stack between" style={{ padding: 'var(--pad-lg)', gap: 'clamp(36px,5vw,72px)' }}>
+        <span className="label">About</span>
         <h1 id="a-title" className="display" style={{ fontSize: 'clamp(52px,7.2vw,124px)', letterSpacing: '-0.055em', lineHeight: 0.92 }}>
           <Line>A little</Line>
           <Line><Em size="1.1em" style={{ letterSpacing: '-0.03em' }}>about</Em> me.</Line>
@@ -28,23 +25,23 @@ export function About() {
 
       <figure data-card="" data-reveal="" className="photo cell" style={{ ...cell('a_portrait'), minHeight: 420 }}>
         <Media photo={photos.portrait} label="Portrait" labelSize="clamp(38px,3.4vw,56px)" hint="DROP A PHOTOGRAPH"
-          bg="radial-gradient(120% 80% at 30% 0%,#262628 0%,#171718 50%,#111112 100%)" />
+          bg="radial-gradient(120% 80% at 30% 0%,#1D3429 0%,#11201A 50%,#0B1612 100%)" />
         <span aria-hidden="true" className="photo-shade" style={{ background: 'linear-gradient(180deg,rgba(11,11,12,0) 60%,rgba(11,11,12,.75) 100%)' }} />
         <figcaption style={{ position: 'absolute', left: 22, right: 22, bottom: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 12, pointerEvents: 'none' }}>
           <span className="serif" style={{ fontSize: 26, lineHeight: 1 }}>Lorcan.</span>
-          <span className="micro" style={{ letterSpacing: '.18em', color: '#B5B5B5' }}>IRELAND · NETHERLANDS</span>
+          <span className="micro" style={{ color: '#B2C2BA' }}>IRELAND · NETHERLANDS</span>
         </figcaption>
       </figure>
 
       <Card at="a_places" aria-label="Ireland and the Netherlands" glow={[420, 0.045]} edge={[200, 0.3]} className="stack between"
-        style={{ padding: 'clamp(22px,2.4vw,36px)', gap: 28 }}>
+        style={{ padding: 'var(--pad-sm)', gap: 28 }}>
         <span className="label">Two places</span>
         <div style={{ display: 'flex', alignItems: 'flex-end', gap: 16 }}>
           <div className="stack" style={{ gap: 8, minWidth: 0 }}>
             <span style={place}>Ireland</span>
             <span className="micro" style={{ color: 'var(--label)' }}>WHERE I'M FROM</span>
           </div>
-          <span aria-hidden="true" style={{ flex: 1, minWidth: 24, height: 1, marginBottom: 30, background: 'linear-gradient(90deg,#3A3A3D,#D4B58A 50%,#3A3A3D)' }} />
+          <span aria-hidden="true" style={{ flex: 1, minWidth: 24, height: 1, marginBottom: 30, background: 'linear-gradient(90deg,#2E5242,#34D399 50%,#2E5242)' }} />
           <div className="stack" style={{ gap: 8, alignItems: 'flex-end', textAlign: 'right', minWidth: 0 }}>
             <span style={place}>Netherlands</span>
             <span className="micro" style={{ color: 'var(--label)' }}>CLOSE TO A DECADE</span>
@@ -53,7 +50,7 @@ export function About() {
         <p className="pretty" style={{ fontSize: 15, lineHeight: 1.55, color: 'var(--body)' }}>An Irish ease with conversation. A Dutch habit of saying what you mean.</p>
       </Card>
 
-      <Card as="figure" at="a_quote" alt edge={[200, 0.32]} className="stack between" style={{ margin: 0, padding: 'clamp(22px,2.4vw,36px)', gap: 24 }}>
+      <Card as="figure" at="a_quote" alt edge={[200, 0.32]} className="stack between" style={{ margin: 0, padding: 'var(--pad-sm)', gap: 24 }}>
         <figcaption className="label">Something I've learned</figcaption>
         <blockquote className="serif balance" style={{ fontSize: 'clamp(25px,2.3vw,36px)', lineHeight: 1.1, letterSpacing: '-0.015em', color: 'var(--text)' }}>
           “The most interesting work rarely fits neatly into one job description.”
@@ -61,7 +58,7 @@ export function About() {
       </Card>
 
       <Card at="a_story" aria-labelledby="a-story" glow={[620, 0.035]} edge={[240, 0.28]} className="stack"
-        style={{ padding: 'clamp(24px,3vw,48px)', gap: 'clamp(24px,3vw,40px)' }}>
+        style={{ padding: 'var(--pad-lg)', gap: 'clamp(24px,3vw,40px)' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-end', gap: '16px 40px' }}>
           <div className="stack" style={{ gap: 16 }}>
             <span className="label">How I got here</span>
@@ -82,7 +79,7 @@ export function About() {
         </div>
       </Card>
 
-      <Card as="article" at="a_now" alt edge={[200, 0.32]} className="stack between" style={{ padding: 'clamp(22px,2.4vw,36px)', gap: 24 }}>
+      <Card as="article" at="a_now" alt edge={[200, 0.32]} className="stack between" style={{ padding: 'var(--pad-sm)', gap: 24 }}>
         <span className="label with-dot"><span className="dot" />iv · Now</span>
         <div className="stack" style={{ gap: 12 }}>
           <h2 style={h3}>Conversations about AI</h2>
@@ -93,14 +90,14 @@ export function About() {
       </Card>
 
       <Card as="a" at="a_teams" {...link('experience')} glow={[420, 0.045]} edge={[200, 0.3]} className="stack between arrow-host"
-        style={{ padding: 'clamp(22px,2.4vw,36px)', gap: 24 }}>
-        <span style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 16 }}>
-          <span className="label">v · How I like to work</span>
+        style={{ padding: 'var(--pad-sm)', gap: 24 }}>
+        <span className="label">v · How I like to work</span>
+        <span style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 16 }}>
+          <span className="stack" style={{ gap: 12 }}>
+            <span style={h3}>Small teams, real contribution.</span>
+            <span className="pretty" style={{ fontSize: 15, lineHeight: 1.6, color: 'var(--body)' }}>I'm at my best where ideas move quickly and nobody hides behind a job title. If something needs doing and I can help, I'd rather pitch in.</span>
+          </span>
           <Arrow variant="circle" box={44} />
-        </span>
-        <span className="stack" style={{ gap: 12 }}>
-          <span style={h3}>Small teams, real contribution.</span>
-          <span className="pretty" style={{ fontSize: 15, lineHeight: 1.6, color: 'var(--body)' }}>I'm at my best where ideas move quickly and nobody hides behind a job title. If something needs doing and I can help, I'd rather pitch in.</span>
         </span>
       </Card>
 
@@ -116,7 +113,7 @@ export function NextCard({ at, route, eyebrow, children }: { at: 'a_next' | 'e_n
   const { link } = useSite();
   return (
     <Card as="a" at={at} {...link(route)} glow={[720, 0.04]} edge={[260, 0.3]} className="arrow-host"
-      style={{ padding: 'clamp(24px,3vw,48px)', display: 'flex', flexWrap: 'wrap', alignItems: 'flex-end', justifyContent: 'space-between', gap: 24 }}>
+      style={{ padding: 'var(--pad-lg)', display: 'flex', flexWrap: 'wrap', alignItems: 'flex-end', justifyContent: 'space-between', gap: 24 }}>
       <span className="stack" style={{ gap: 'clamp(16px,2vw,28px)' }}>
         <span className="label">{eyebrow}</span>
         <span className="shift" style={{ fontSize: 'clamp(48px,7vw,120px)', fontWeight: 500, letterSpacing: '-0.055em', lineHeight: 0.9, color: 'var(--text)' }}>{children}</span>

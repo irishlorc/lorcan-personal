@@ -8,7 +8,7 @@ export function Experience() {
   const { cv } = useSite();
   return (
     <div className="grid" data-screen-label="Experience">
-      <Card at="e_title" aria-labelledby="e-title" className="stack between" style={{ padding: 'clamp(24px,3.4vw,56px)', gap: 'clamp(32px,4vw,56px)' }}>
+      <Card at="e_title" aria-labelledby="e-title" className="stack between" style={{ padding: 'var(--pad-lg)', gap: 'clamp(32px,4vw,56px)' }}>
         <span className="label">Experience</span>
         <h1 id="e-title" className="display" style={{ fontSize: 'clamp(40px,5vw,86px)', letterSpacing: '-0.05em', lineHeight: 0.96 }}>
           <Line>A varied background.</Line>
@@ -20,16 +20,16 @@ export function Experience() {
       </Card>
 
       <Card at="e_years" alt aria-label="Years of experience" edge={[200, 0.32]}
-        style={{ padding: 'clamp(22px,2.4vw,32px)', display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 16 }}>
-        <span className="serif" style={{ fontSize: 'clamp(96px,9vw,156px)', lineHeight: 0.74, letterSpacing: '-0.04em' }}>10+</span>
-        <span className="stack" style={{ alignItems: 'flex-end', gap: 8, textAlign: 'right', alignSelf: 'stretch', justifyContent: 'space-between' }}>
-          <span className="label">Years</span>
-          <span style={{ maxWidth: 150, fontSize: 14, lineHeight: 1.45, color: 'var(--body-strong)' }}>Creative, commercial and digital.</span>
+        className="stack between" style={{ padding: 'var(--pad-sm)', gap: 20 }}>
+        <span className="label">Years</span>
+        <span style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 16 }}>
+          <span className="serif" style={{ fontSize: 'clamp(88px,8vw,140px)', lineHeight: 0.74, letterSpacing: '-0.04em' }}>10+</span>
+          <span style={{ maxWidth: 150, fontSize: 14, lineHeight: 1.45, color: 'var(--body-strong)', textAlign: 'right' }}>Creative, commercial and digital.</span>
         </span>
       </Card>
 
       <Card as="a" at="e_cv" href={cv.href} target={cv.external ? '_blank' : undefined} rel="noopener" glow={[420, 0.045]} edge={[200, 0.3]}
-        className="stack between arrow-host" style={{ padding: 'clamp(22px,2.4vw,32px)', gap: 24 }}>
+        className="stack between arrow-host" style={{ padding: 'var(--pad-sm)', gap: 24 }}>
         <span className="label">The full picture</span>
         <span style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 16 }}>
           <span className="stack" style={{ gap: 8 }}>
@@ -41,7 +41,7 @@ export function Experience() {
       </Card>
 
       <section data-reveal="" aria-labelledby="e-areas" className="card card--plain cell stack"
-        style={{ ...cell('e_areas'), padding: 'clamp(22px,2.8vw,44px)', gap: 'clamp(24px,3vw,40px)' }}>
+        style={{ ...cell('e_areas'), padding: 'var(--pad-lg)', gap: 'clamp(24px,3vw,40px)' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-end', gap: '12px 32px' }}>
           <h2 id="e-areas" className="display" style={{ fontSize: 'clamp(28px,2.8vw,44px)', letterSpacing: '-0.04em', lineHeight: 1 }}>Three threads.</h2>
           <span className="label">Creative → Commercial → Technology</span>
@@ -49,9 +49,9 @@ export function Experience() {
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'clamp(20px,2.4vw,36px)' }}>
           {AREAS.map((a, i) => (
             <article key={a.title} className="stack" style={{ flex: '1 1 300px', minWidth: 0, gap: 16 }}>
-              <div data-card="" className="photo" style={{ aspectRatio: '4 / 3', borderRadius: 18 }}>
+              <div data-card="" className="photo" style={{ aspectRatio: '16 / 10', maxHeight: 260, borderRadius: 18 }}>
                 <Media photo={photos[a.photo]} label={a.media} labelSize="30px" hint="DROP GENUINE WORK" corners={['tl', 'br']} cornerInset={14}
-                  bg="radial-gradient(120% 90% at 30% 0%,#242426 0%,#171718 55%,#121213 100%)" />
+                  bg="radial-gradient(120% 90% at 30% 0%,#1B3128 0%,#11201A 55%,#0C1813 100%)" />
               </div>
               <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 12, paddingTop: 8 }}>
                 <span aria-hidden="true" className="serif" style={{ fontSize: 26, lineHeight: 1, color: 'var(--dim)' }}>{ROMAN[i]}</span>
@@ -66,7 +66,7 @@ export function Experience() {
       </section>
 
       <Card at="e_roles" aria-labelledby="e-roles" glow={[620, 0.035]} edge={[240, 0.28]} className="stack"
-        style={{ padding: 'clamp(24px,3vw,48px)', gap: 'clamp(24px,3vw,40px)' }}>
+        style={{ padding: 'var(--pad-lg)', gap: 'clamp(24px,3vw,40px)' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-end', gap: '16px 40px' }}>
           <div className="stack" style={{ gap: 16 }}>
             <span className="label">Where I've worked</span>
@@ -93,7 +93,7 @@ export function Experience() {
       </Card>
 
       <Card at="e_bring" alt aria-labelledby="e-bring" glow={[520, 0.05]} edge={[220, 0.32]} className="stack between"
-        style={{ padding: 'clamp(24px,3vw,44px)', gap: 32 }}>
+        style={{ padding: 'var(--pad-lg)', gap: 32 }}>
         <span className="label">Six things</span>
         <div className="stack" style={{ gap: 18 }}>
           <h2 id="e-bring" className="display" style={{ fontSize: 'clamp(34px,3.6vw,60px)', letterSpacing: '-0.048em', lineHeight: 0.98 }}>
@@ -106,8 +106,8 @@ export function Experience() {
 
       {TRAITS.map((t, i) => (
         <Card key={t.title} as="article" at={t.cell} glow={[420, 0.045]} edge={[200, 0.3]} className="stack between"
-          style={{ padding: 'clamp(22px,2.2vw,32px)', gap: 24 }}>
-          <span aria-hidden="true" className="serif" style={{ fontSize: 'clamp(36px,3vw,48px)', lineHeight: 0.8, color: '#4E4E51' }}>{ROMAN[i]}.</span>
+          style={{ padding: 'var(--pad-sm)', gap: 24 }}>
+          <span aria-hidden="true" className="serif" style={{ fontSize: 'clamp(36px,3vw,48px)', lineHeight: 0.8, color: '#426352' }}>{ROMAN[i]}.</span>
           <div className="stack" style={{ gap: 10 }}>
             <h3 style={{ fontSize: 'clamp(19px,1.5vw,22px)', fontWeight: 500, letterSpacing: '-0.02em' }}>{t.title}</h3>
             <p className="pretty" style={{ maxWidth: 440, fontSize: 15, lineHeight: 1.6, color: 'var(--body)' }}>{t.text}</p>

@@ -27,11 +27,8 @@ export function Contact() {
   return (
     <div className="grid" data-screen-label="Contact">
       <Card at="c_main" aria-labelledby="c-title" glow={[820, 0.04]} edge={[280, 0.3]} className="stack between"
-        style={{ padding: 'clamp(24px,4vw,64px)', gap: 'clamp(40px,5vw,80px)' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', gap: 16 }}>
-          <span className="label">Contact</span>
-          <span className="label">Email is best</span>
-        </div>
+        style={{ padding: 'var(--pad-lg)', gap: 'clamp(40px,5vw,80px)' }}>
+        <span className="label">Contact</span>
         <h1 id="c-title" className="display" style={{ fontSize: 'clamp(50px,8.4vw,150px)', letterSpacing: '-0.058em', lineHeight: 0.9 }}>
           <Line>Good conversations</Line>
           <Line className="serif accent" style={{ fontSize: '1.1em', letterSpacing: '-0.03em' }}>start somewhere.</Line>
@@ -55,15 +52,15 @@ export function Contact() {
       </Card>
 
       <Card as="a" at="c_link" href={linkedin ?? cv.href} target={linkedin || cv.external ? '_blank' : undefined} rel="noopener noreferrer"
-        glow={[420, 0.045]} edge={[200, 0.3]} className="stack between arrow-host" style={{ padding: 'clamp(20px,2.2vw,32px)', gap: 20 }}>
-        <span style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}>
-          <span className="label">{linkedin ? 'LinkedIn' : 'CV'}</span>
+        glow={[420, 0.045]} edge={[200, 0.3]} className="stack between arrow-host" style={{ padding: 'var(--pad-sm)', gap: 20 }}>
+        <span className="label">{linkedin ? 'LinkedIn' : 'CV'}</span>
+        <span style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 16 }}>
+          <span style={smallTitle}>{linkedin ? 'Find me on LinkedIn.' : cv.external ? 'Download my CV.' : 'Request my CV.'}</span>
           <Arrow variant="circle" box={40} size={13} />
         </span>
-        <span style={smallTitle}>{linkedin ? 'Find me on LinkedIn.' : cv.external ? 'Download my CV.' : 'Request my CV.'}</span>
       </Card>
 
-      <Card at="c_time" alt aria-label="Local time" edge={[200, 0.32]} className="stack between" style={{ padding: 'clamp(20px,2.2vw,32px)', gap: 20 }}>
+      <Card at="c_time" alt aria-label="Local time" edge={[200, 0.32]} className="stack between" style={{ padding: 'var(--pad-sm)', gap: 20 }}>
         <span className="label">Local time</span>
         <div className="stack">
           <div style={row}>
@@ -78,7 +75,7 @@ export function Contact() {
       </Card>
 
       <Card as="a" at="c_home" {...link('home')} glow={[520, 0.045]} edge={[220, 0.3]} className="stack between arrow-host"
-        style={{ padding: 'clamp(20px,2.2vw,32px)', gap: 20 }}>
+        style={{ padding: 'var(--pad-sm)', gap: 20 }}>
         <span className="label">Not quite yet?</span>
         <span style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 16 }}>
           <span className="shift" style={smallTitle}>Back to the start.</span>

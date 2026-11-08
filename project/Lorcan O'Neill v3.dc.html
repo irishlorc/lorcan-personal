@@ -13,18 +13,18 @@
 <meta property="og:title" content="Lorcan O'Neill">
 <meta property="og:description" content="Creative by background. Commercial by instinct. Working across design, communication, business and technology.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0B0B0C">
+<meta name="theme-color" content="#06100C">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&amp;family=Geist+Mono:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
 <script src="./image-slot.js"></script>
 <style>
-html,body{margin:0;padding:0;background:#0B0B0C;color:#F0F0F0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+html,body{margin:0;padding:0;background:#06100C;color:#EEF4F1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
 *{box-sizing:border-box}
-::selection{background:#E8E1D5;color:#0B0B0C}
-a{color:#F0F0F0;text-decoration:none}
+::selection{background:#34D399;color:#06100C}
+a{color:#EEF4F1;text-decoration:none}
 a:hover{color:#FFFFFF}
-:focus-visible{outline:1.5px solid #E8E1D5;outline-offset:3px}
+:focus-visible{outline:1.5px solid #6EE7B7;outline-offset:3px}
 body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:500;opacity:.07;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
 body[data-grain="off"]::after{display:none}
 image-slot:not([data-filled]){opacity:0;transition:opacity .4s ease}
@@ -32,43 +32,43 @@ image-slot:not([data-filled]):hover{opacity:.55}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none !important;transition-duration:.01ms !important;transition-delay:0s !important}}
 </style>
 </helmet>
-<div style="min-height:100vh;background:#0B0B0C;padding:clamp(6px,1.2vw,18px);font-family:'Geist',ui-sans-serif,system-ui,sans-serif;color:#F0F0F0;font-feature-settings:'ss01'">
-<a href="#main" style="position:absolute;left:-9999px;top:12px;z-index:600;padding:10px 16px;border-radius:12px;background:#F0F0F0;color:#0B0B0C;font-size:14px" style-focus="left:16px">Skip to content</a>
-<div style="max-width:1520px;margin:0 auto;border:1px solid #222224;border-radius:clamp(24px,2.8vw,42px);background:radial-gradient(1200px 520px at 18% -8%,rgba(255,255,255,.035),transparent 60%),#0D0D0E;padding:clamp(8px,.9vw,14px);box-shadow:inset 0 1px 0 rgba(255,255,255,.03)">
+<div style="min-height:100vh;background:#06100C;padding:clamp(6px,1.2vw,18px);font-family:'Geist',ui-sans-serif,system-ui,sans-serif;color:#EEF4F1;font-feature-settings:'ss01'">
+<a href="#main" style="position:absolute;left:-9999px;top:12px;z-index:600;padding:10px 16px;border-radius:12px;background:#EEF4F1;color:#06100C;font-size:14px" style-focus="left:16px">Skip to content</a>
+<div style="max-width:1520px;margin:0 auto;border:1px solid #192E25;border-radius:clamp(24px,2.8vw,42px);background:radial-gradient(1200px 520px at 18% -8%,rgba(255,255,255,.035),transparent 60%),#08130F;padding:clamp(8px,.9vw,14px);box-shadow:inset 0 1px 0 rgba(255,255,255,.03)">
 
 <header style="position:relative;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:clamp(8px,.9vw,14px)">
-  <a href="#/" onClick="{{ goHome }}" aria-label="Lorcan O'Neill — home" style="position:relative;z-index:3;height:56px;padding:0 20px;border-radius:18px;border:1px solid #29292B;background:linear-gradient(180deg,#1A1A1B,#151516);box-shadow:inset 0 1px 0 rgba(255,255,255,.045);display:flex;align-items:center;gap:7px;color:#F0F0F0;transition:border-color .4s ease" style-hover="border-color:#3A3A3D;color:#F0F0F0">
+  <a href="#/" onClick="{{ goHome }}" aria-label="Lorcan O'Neill — home" style="position:relative;z-index:3;height:56px;padding:0 20px;border-radius:18px;border:1px solid #213B30;background:linear-gradient(180deg,#13241D,#0F1C17);box-shadow:inset 0 1px 0 rgba(255,255,255,.045);display:flex;align-items:center;gap:7px;color:#EEF4F1;transition:border-color .4s ease" style-hover="border-color:#2E5242;color:#EEF4F1">
     <span style="font-size:17px;font-weight:500;letter-spacing:-0.025em">Lorcan</span>
-    <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:21px;line-height:1;color:#E8E1D5">O'Neill</span>
+    <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:21px;line-height:1;color:#6EE7B7">O'Neill</span>
   </a>
   <sc-if value="{{ isWide }}" hint-placeholder-val="{{ true }}">
-    <nav ref="{{ navRef }}" aria-label="Primary" style="position:relative;display:flex;gap:2px;height:56px;padding:6px;border-radius:18px;border:1px solid #29292B;background:linear-gradient(180deg,#1A1A1B,#151516);box-shadow:inset 0 1px 0 rgba(255,255,255,.045)">
-      <span aria-hidden="true" style="position:absolute;top:6px;bottom:6px;left:{{ indX }};width:{{ indW }};opacity:{{ indO }};border-radius:12px;background:linear-gradient(180deg,#262628,#202022);box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 0 0 1px #323235,0 6px 14px -6px rgba(0,0,0,.8);transition:left .6s cubic-bezier(.65,0,.35,1),width .6s cubic-bezier(.65,0,.35,1),opacity .3s ease"></span>
+    <nav ref="{{ navRef }}" aria-label="Primary" style="position:relative;display:flex;gap:2px;height:56px;padding:6px;border-radius:18px;border:1px solid #213B30;background:linear-gradient(180deg,#13241D,#0F1C17);box-shadow:inset 0 1px 0 rgba(255,255,255,.045)">
+      <span aria-hidden="true" style="position:absolute;top:6px;bottom:6px;left:{{ indX }};width:{{ indW }};opacity:{{ indO }};border-radius:12px;background:linear-gradient(180deg,#1D3429,#172B22);box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 0 0 1px #284739,0 6px 14px -6px rgba(0,0,0,.8);transition:left .6s cubic-bezier(.65,0,.35,1),width .6s cubic-bezier(.65,0,.35,1),opacity .3s ease"></span>
       <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="4">
-        <a href="{{ item.href }}" onClick="{{ item.onClick }}" aria-current="{{ item.current }}" style="position:relative;z-index:1;display:flex;align-items:center;padding:0 18px;border-radius:12px;font-size:14px;font-weight:500;letter-spacing:-0.005em;color:{{ item.color }};transition:color .4s ease" style-hover="color:#F0F0F0">{{ item.label }}</a>
+        <a href="{{ item.href }}" onClick="{{ item.onClick }}" aria-current="{{ item.current }}" style="position:relative;z-index:1;display:flex;align-items:center;padding:0 18px;border-radius:12px;font-size:14px;font-weight:500;letter-spacing:-0.005em;color:{{ item.color }};transition:color .4s ease" style-hover="color:#EEF4F1">{{ item.label }}</a>
       </sc-for>
     </nav>
-    <a href="#/contact" onClick="{{ goContact }}" onMouseEnter="{{ hov.cta }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.cta }}" onBlur="{{ unhov }}" style="height:56px;padding:0 8px 0 20px;border-radius:18px;background:#EDEDED;color:#0B0B0C;display:flex;align-items:center;gap:14px;font-size:14px;font-weight:500;box-shadow:inset 0 -2px 0 rgba(0,0,0,.08);transition:background .4s ease" style-hover="background:#FFFFFF;color:#0B0B0C">
+    <a href="#/contact" onClick="{{ goContact }}" onMouseEnter="{{ hov.cta }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.cta }}" onBlur="{{ unhov }}" style="height:56px;padding:0 8px 0 20px;border-radius:18px;background:#34D399;color:#06100C;display:flex;align-items:center;gap:14px;font-size:14px;font-weight:500;box-shadow:inset 0 -2px 0 rgba(0,0,0,.08);transition:background .4s ease" style-hover="background:#6EE7B7;color:#06100C">
       <span>Get in touch</span>
-      <span aria-hidden="true" style="position:relative;width:40px;height:40px;border-radius:12px;background:#0B0B0C;color:#F0F0F0;overflow:hidden"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.cta.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.cta.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span>
+      <span aria-hidden="true" style="position:relative;width:40px;height:40px;border-radius:12px;background:#06100C;color:#EEF4F1;overflow:hidden"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.cta.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.cta.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span>
     </a>
   </sc-if>
   <sc-if value="{{ isNarrow }}" hint-placeholder-val="{{ false }}">
-    <button type="button" onClick="{{ toggleMenu }}" aria-expanded="{{ menuOpen }}" aria-controls="mobile-menu" aria-label="{{ menuAria }}" style="position:relative;z-index:3;width:56px;height:56px;border-radius:18px;border:1px solid #29292B;background:linear-gradient(180deg,#1A1A1B,#151516);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer">
-      <span style="display:block;width:18px;height:1.5px;border-radius:2px;background:#F0F0F0;transition:transform .5s cubic-bezier(.65,0,.35,1);transform:{{ bar1 }}"></span>
-      <span style="display:block;width:18px;height:1.5px;border-radius:2px;background:#F0F0F0;transition:transform .5s cubic-bezier(.65,0,.35,1);transform:{{ bar2 }}"></span>
+    <button type="button" onClick="{{ toggleMenu }}" aria-expanded="{{ menuOpen }}" aria-controls="mobile-menu" aria-label="{{ menuAria }}" style="position:relative;z-index:3;width:56px;height:56px;border-radius:18px;border:1px solid #213B30;background:linear-gradient(180deg,#13241D,#0F1C17);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer">
+      <span style="display:block;width:18px;height:1.5px;border-radius:2px;background:#EEF4F1;transition:transform .5s cubic-bezier(.65,0,.35,1);transform:{{ bar1 }}"></span>
+      <span style="display:block;width:18px;height:1.5px;border-radius:2px;background:#EEF4F1;transition:transform .5s cubic-bezier(.65,0,.35,1);transform:{{ bar2 }}"></span>
     </button>
     <nav id="mobile-menu" aria-label="Mobile" aria-hidden="{{ menuHidden }}" style="position:fixed;inset:0;z-index:2;padding:110px 22px 28px;background:rgba(11,11,12,.97);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:flex;flex-direction:column;justify-content:space-between;visibility:{{ menuVis }};opacity:{{ menuO }};transition:opacity .45s ease,visibility .45s">
       <div style="display:flex;flex-direction:column">
         <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="4">
-          <a href="{{ item.href }}" onClick="{{ item.onClick }}" aria-current="{{ item.current }}" tabindex="{{ item.tab }}" style="display:flex;align-items:baseline;gap:18px;padding:14px 4px;border-bottom:1px solid #1F1F21;color:{{ item.mcolor }};opacity:{{ item.mo }};transform:{{ item.mt }};transition:opacity .6s ease {{ item.md }},transform .8s cubic-bezier(.19,1,.22,1) {{ item.md }}">
-            <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:22px;color:#6E6E70;width:28px">{{ item.roman }}</span>
+          <a href="{{ item.href }}" onClick="{{ item.onClick }}" aria-current="{{ item.current }}" tabindex="{{ item.tab }}" style="display:flex;align-items:baseline;gap:18px;padding:14px 4px;border-bottom:1px solid #183026;color:{{ item.mcolor }};opacity:{{ item.mo }};transform:{{ item.mt }};transition:opacity .6s ease {{ item.md }},transform .8s cubic-bezier(.19,1,.22,1) {{ item.md }}">
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:22px;color:#61796D;width:28px">{{ item.roman }}</span>
             <span style="font-size:clamp(38px,11vw,56px);font-weight:500;letter-spacing:-0.045em;line-height:1">{{ item.label }}</span>
           </a>
         </sc-for>
       </div>
-      <div style="display:flex;flex-direction:column;gap:6px;font-family:'Geist Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.12em;color:#808080">
-        <a href="{{ mailto }}" tabindex="{{ menuTab }}" style="color:#D6D6D6;letter-spacing:.04em;font-size:14px">{{ email }}</a>
+      <div style="display:flex;flex-direction:column;gap:6px;font-family:'Geist Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.12em;color:#7E948A">
+        <a href="{{ mailto }}" tabindex="{{ menuTab }}" style="color:#D3DFD9;letter-spacing:.04em;font-size:14px">{{ email }}</a>
         <span>IRELAND · THE NETHERLANDS</span>
       </div>
     </nav>
@@ -80,105 +80,102 @@ image-slot:not([data-filled]):hover{opacity:.55}
 <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
 <div data-screen-label="Home" style="display:grid;grid-template-columns:{{ cols }};grid-auto-rows:{{ rows }};grid-auto-flow:dense;gap:clamp(8px,.9vw,14px)">
 
-  <section data-card="" data-reveal="" aria-labelledby="h-title" style="grid-column:{{ g.h_intro.c }};grid-row:{{ g.h_intro.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(620px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.04),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3.2vw,52px);display:flex;flex-direction:column;justify-content:space-between;gap:clamp(32px,4vw,56px)">
+  <section data-card="" data-reveal="" aria-labelledby="h-title" style="grid-column:{{ g.h_intro.c }};grid-row:{{ g.h_intro.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(620px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.04),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3vw,48px);display:flex;flex-direction:column;justify-content:space-between;gap:clamp(32px,4vw,56px)">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(240px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.3),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
     <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 16px">
-      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">Creative · Commercial · Communication</span>
-      <span style="display:flex;align-items:center;gap:8px;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080"><span style="width:6px;height:6px;border-radius:50%;background:#D4B58A;box-shadow:0 0 12px rgba(212,181,138,.5)"></span>Ireland · Netherlands</span>
+      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A">Creative · Commercial · Communication</span>
+      <span style="display:flex;align-items:center;gap:8px;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A"><span style="width:6px;height:6px;border-radius:50%;background:#34D399;box-shadow:0 0 12px rgba(52,211,153,.55)"></span>Ireland · Netherlands</span>
     </div>
     <div>
-      <p style="margin:0 0 clamp(14px,1.4vw,22px);font-size:clamp(18px,1.5vw,23px);font-weight:400;letter-spacing:-0.015em;color:#969696">Hi, I'm Lorcan —</p>
-      <h1 id="h-title" style="margin:0;font-size:clamp(42px,4.5vw,76px);font-weight:500;letter-spacing:-0.048em;line-height:.98;color:#F0F0F0">
+      <p style="margin:0 0 clamp(14px,1.4vw,22px);font-size:clamp(18px,1.5vw,23px);font-weight:400;letter-spacing:-0.015em;color:#95A79E">Hi, I'm Lorcan —</p>
+      <h1 id="h-title" style="margin:0;font-size:clamp(42px,4.5vw,76px);font-weight:500;letter-spacing:-0.048em;line-height:.98;color:#EEF4F1">
         <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block">Creative by background.</span></span>
-        <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block"><span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.12em;letter-spacing:-0.025em;color:#E8E1D5">Commercial</span> by instinct.</span></span>
+        <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block"><span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.12em;letter-spacing:-0.025em;color:#6EE7B7">Commercial</span> by instinct.</span></span>
       </h1>
     </div>
-    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px 32px;padding-top:clamp(20px,2vw,28px);border-top:1px solid #262628">
-      <p style="margin:0;max-width:340px;font-size:16px;line-height:1.55;color:#969696;text-wrap:pretty">Working across design, communication, business and technology.</p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px 32px;padding-top:clamp(20px,2vw,28px);border-top:1px solid #1D3429">
+      <p style="margin:0;max-width:340px;font-size:16px;line-height:1.55;color:#95A79E;text-wrap:pretty">Working across design, communication, business and technology.</p>
       <div style="display:flex;flex-wrap:wrap;gap:8px">
-        <a href="#/about" onClick="{{ goAbout }}" onMouseEnter="{{ hov.b1 }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.b1 }}" onBlur="{{ unhov }}" style="height:52px;padding:0 6px 0 20px;border-radius:16px;background:#EDEDED;color:#0B0B0C;display:flex;align-items:center;gap:14px;font-size:15px;font-weight:500;box-shadow:inset 0 -2px 0 rgba(0,0,0,.08);transition:background .4s ease" style-hover="background:#FFFFFF;color:#0B0B0C">
+        <a href="#/about" onClick="{{ goAbout }}" onMouseEnter="{{ hov.b1 }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.b1 }}" onBlur="{{ unhov }}" style="height:52px;padding:0 6px 0 20px;border-radius:16px;background:#34D399;color:#06100C;display:flex;align-items:center;gap:14px;font-size:15px;font-weight:500;box-shadow:inset 0 -2px 0 rgba(0,0,0,.08);transition:background .4s ease" style-hover="background:#6EE7B7;color:#06100C">
           <span>More about me</span>
-          <span aria-hidden="true" style="position:relative;width:40px;height:40px;border-radius:12px;background:#0B0B0C;color:#F0F0F0;overflow:hidden"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.b1.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.b1.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span>
+          <span aria-hidden="true" style="position:relative;width:40px;height:40px;border-radius:12px;background:#06100C;color:#EEF4F1;overflow:hidden"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.b1.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.b1.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span>
         </a>
-        <a href="#/contact" onClick="{{ goContact }}" style="height:52px;padding:0 20px;border-radius:16px;border:1px solid #303032;background:rgba(255,255,255,.02);color:#D6D6D6;display:flex;align-items:center;font-size:15px;font-weight:500;transition:background .4s ease,border-color .4s ease,color .4s ease" style-hover="background:#202021;border-color:#46464A;color:#FFFFFF">Say hello</a>
+        <a href="#/contact" onClick="{{ goContact }}" style="height:52px;padding:0 20px;border-radius:16px;border:1px solid #264437;background:rgba(255,255,255,.02);color:#D3DFD9;display:flex;align-items:center;font-size:15px;font-weight:500;transition:background .4s ease,border-color .4s ease,color .4s ease" style-hover="background:#172B22;border-color:#3A6352;color:#FFFFFF">Say hello</a>
       </div>
     </div>
   </section>
 
-  <figure data-card="" data-reveal="" style="grid-column:{{ g.h_portrait.c }};grid-row:{{ g.h_portrait.r }};margin:0;position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:#141415;min-height:300px">
+  <figure data-card="" data-reveal="" style="grid-column:{{ g.h_portrait.c }};grid-row:{{ g.h_portrait.r }};margin:0;position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:#0D1A15;min-height:300px">
     <div data-media="" style="position:absolute;inset:0;transition:transform 1.4s cubic-bezier(.2,.7,.2,1),filter 1s ease">
-      <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(120% 90% at 25% 0%,#252527 0%,#171718 52%,#111112 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
-        <span style="position:absolute;left:16px;top:16px;width:14px;height:14px;border-left:1px solid #3C3C3F;border-top:1px solid #3C3C3F"></span>
-        <span style="position:absolute;right:16px;top:16px;width:14px;height:14px;border-right:1px solid #3C3C3F;border-top:1px solid #3C3C3F"></span>
-        <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(34px,3vw,48px);color:#4A4A4D">Portrait</span>
-        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.2em;color:#5E5E61">DROP A PHOTOGRAPH</span>
+      <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(120% 90% at 25% 0%,#1C3329 0%,#11201A 52%,#0B1612 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+        <span style="position:absolute;left:16px;top:16px;width:14px;height:14px;border-left:1px solid #305544;border-top:1px solid #305544"></span>
+        <span style="position:absolute;right:16px;top:16px;width:14px;height:14px;border-right:1px solid #305544;border-top:1px solid #305544"></span>
+        <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(34px,3vw,48px);color:#3D5E4F">Portrait</span>
+        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.2em;color:#556F62">DROP A PHOTOGRAPH</span>
       </div>
       <image-slot id="lo-portrait" shape="rect" placeholder="Your portrait" style="position:absolute;inset:0;width:100%;height:100%"></image-slot>
     </div>
     <span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(11,11,12,0) 58%,rgba(11,11,12,.72) 100%)"></span>
     <figcaption style="position:absolute;left:20px;right:20px;bottom:18px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;pointer-events:none">
-      <span style="font-size:15px;font-weight:500;letter-spacing:-0.01em;color:#F0F0F0">Lorcan O'Neill</span>
-      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.18em;color:#B5B5B5">IE · NL</span>
+      <span style="font-size:15px;font-weight:500;letter-spacing:-0.01em;color:#EEF4F1">Lorcan O'Neill</span>
+      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#B2C2BA">IE · NL</span>
     </figcaption>
   </figure>
 
   <nav data-reveal="" aria-label="Elsewhere" style="grid-column:{{ g.h_social.c }};grid-row:{{ g.h_social.r }};display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:clamp(8px,.9vw,14px)">
-    <a data-card="" href="{{ mailto }}" aria-label="Email Lorcan" title="Email" style="position:relative;overflow:hidden;display:grid;place-items:center;min-height:72px;border-radius:clamp(16px,1.4vw,22px);border:1px solid #29292B;background:radial-gradient(160px circle at var(--mx,-300px) var(--my,-300px),rgba(255,255,255,.07),transparent 70%),linear-gradient(180deg,#1A1A1B,#151516);box-shadow:inset 0 1px 0 rgba(255,255,255,.045);color:#CFCFCF;transition:border-color .4s ease,color .4s ease" style-hover="border-color:#3E3E41;color:#FFFFFF">
+    <a data-card="" href="{{ mailto }}" aria-label="Email Lorcan" title="Email" style="position:relative;overflow:hidden;display:grid;place-items:center;min-height:72px;border-radius:clamp(16px,1.4vw,22px);border:1px solid #213B30;background:radial-gradient(160px circle at var(--mx,-300px) var(--my,-300px),rgba(255,255,255,.07),transparent 70%),linear-gradient(180deg,#13241D,#0F1C17);box-shadow:inset 0 1px 0 rgba(255,255,255,.045);color:#CCD9D2;transition:border-color .4s ease,color .4s ease" style-hover="border-color:#33594A;color:#FFFFFF">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3.5 6.5 12 13l8.5-6.5"></path></svg>
     </a>
-    <button data-card="" type="button" onClick="{{ copyEmail }}" aria-label="{{ copyAria }}" title="Copy email address" style="position:relative;overflow:hidden;display:grid;place-items:center;min-height:72px;padding:0;cursor:pointer;font-family:inherit;border-radius:clamp(16px,1.4vw,22px);border:1px solid #29292B;background:radial-gradient(160px circle at var(--mx,-300px) var(--my,-300px),rgba(255,255,255,.07),transparent 70%),linear-gradient(180deg,#1A1A1B,#151516);box-shadow:inset 0 1px 0 rgba(255,255,255,.045);color:#CFCFCF;transition:border-color .4s ease,color .4s ease" style-hover="border-color:#3E3E41;color:#FFFFFF">
+    <button data-card="" type="button" onClick="{{ copyEmail }}" aria-label="{{ copyAria }}" title="Copy email address" style="position:relative;overflow:hidden;display:grid;place-items:center;min-height:72px;padding:0;cursor:pointer;font-family:inherit;border-radius:clamp(16px,1.4vw,22px);border:1px solid #213B30;background:radial-gradient(160px circle at var(--mx,-300px) var(--my,-300px),rgba(255,255,255,.07),transparent 70%),linear-gradient(180deg,#13241D,#0F1C17);box-shadow:inset 0 1px 0 rgba(255,255,255,.045);color:#CCD9D2;transition:border-color .4s ease,color .4s ease" style-hover="border-color:#33594A;color:#FFFFFF">
       <sc-if value="{{ notCopied }}" hint-placeholder-val="{{ true }}">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"></rect><path d="M5 15V6a2 2 0 0 1 2-2h8"></path></svg>
       </sc-if>
       <sc-if value="{{ copied }}" hint-placeholder-val="{{ false }}">
-        <span style="display:flex;flex-direction:column;align-items:center;gap:5px;font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.16em;color:#E8E1D5"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 10 17l9-10"></path></svg>COPIED</span>
+        <span style="display:flex;flex-direction:column;align-items:center;gap:5px;font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#6EE7B7"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 10 17l9-10"></path></svg>COPIED</span>
       </sc-if>
     </button>
     <sc-if value="{{ hasLinkedin }}" hint-placeholder-val="{{ false }}">
-      <a data-card="" href="{{ linkedinUrl }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn" style="position:relative;overflow:hidden;display:grid;place-items:center;min-height:72px;border-radius:clamp(16px,1.4vw,22px);border:1px solid #29292B;background:radial-gradient(160px circle at var(--mx,-300px) var(--my,-300px),rgba(255,255,255,.07),transparent 70%),linear-gradient(180deg,#1A1A1B,#151516);box-shadow:inset 0 1px 0 rgba(255,255,255,.045);color:#CFCFCF;transition:border-color .4s ease,color .4s ease" style-hover="border-color:#3E3E41;color:#FFFFFF">
+      <a data-card="" href="{{ linkedinUrl }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn" style="position:relative;overflow:hidden;display:grid;place-items:center;min-height:72px;border-radius:clamp(16px,1.4vw,22px);border:1px solid #213B30;background:radial-gradient(160px circle at var(--mx,-300px) var(--my,-300px),rgba(255,255,255,.07),transparent 70%),linear-gradient(180deg,#13241D,#0F1C17);box-shadow:inset 0 1px 0 rgba(255,255,255,.045);color:#CCD9D2;transition:border-color .4s ease,color .4s ease" style-hover="border-color:#33594A;color:#FFFFFF">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 10.5v6M11.5 16.5v-6M11.5 13.2a2.4 2.4 0 0 1 4.8 0v3.3"></path><circle cx="8" cy="7.6" r=".7" fill="currentColor" stroke="none"></circle></svg>
       </a>
     </sc-if>
-    <a data-card="" href="{{ cvHref }}" target="{{ cvTarget }}" rel="noopener" aria-label="{{ cvLabel }}" title="{{ cvLabel }}" style="position:relative;overflow:hidden;display:grid;place-items:center;min-height:72px;border-radius:clamp(16px,1.4vw,22px);border:1px solid #29292B;background:radial-gradient(160px circle at var(--mx,-300px) var(--my,-300px),rgba(255,255,255,.07),transparent 70%),linear-gradient(180deg,#1A1A1B,#151516);box-shadow:inset 0 1px 0 rgba(255,255,255,.045);color:#CFCFCF;transition:border-color .4s ease,color .4s ease" style-hover="border-color:#3E3E41;color:#FFFFFF">
+    <a data-card="" href="{{ cvHref }}" target="{{ cvTarget }}" rel="noopener" aria-label="{{ cvLabel }}" title="{{ cvLabel }}" style="position:relative;overflow:hidden;display:grid;place-items:center;min-height:72px;border-radius:clamp(16px,1.4vw,22px);border:1px solid #213B30;background:radial-gradient(160px circle at var(--mx,-300px) var(--my,-300px),rgba(255,255,255,.07),transparent 70%),linear-gradient(180deg,#13241D,#0F1C17);box-shadow:inset 0 1px 0 rgba(255,255,255,.045);color:#CCD9D2;transition:border-color .4s ease,color .4s ease" style-hover="border-color:#33594A;color:#FFFFFF">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5M9 13h6M9 17h4"></path></svg>
     </a>
     <sc-if value="{{ noLinkedin }}" hint-placeholder-val="{{ true }}">
-      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:72px;border-radius:clamp(16px,1.4vw,22px);border:1px dashed #262628">
-        <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:22px;line-height:1;color:#BDBDBD">IE·NL</span>
-      </div>
+      <a data-card="" href="#/contact" onClick="{{ goContact }}" aria-label="Contact page" title="Contact" style="position:relative;overflow:hidden;display:grid;place-items:center;min-height:72px;border-radius:clamp(16px,1.4vw,22px);border:1px solid #213B30;background:radial-gradient(160px circle at var(--mx,-300px) var(--my,-300px),rgba(255,255,255,.07),transparent 70%),linear-gradient(180deg,#13241D,#0F1C17);box-shadow:inset 0 1px 0 rgba(255,255,255,.045);color:#CCD9D2;transition:border-color .4s ease,color .4s ease" style-hover="border-color:#33594A;color:#FFFFFF">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+      </a>
     </sc-if>
   </nav>
 
-  <a data-card="" data-reveal="" href="#/experience" onClick="{{ goExperience }}" onMouseEnter="{{ hov.current }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.current }}" onBlur="{{ unhov }}" style="grid-column:{{ g.h_current.c }};grid-row:{{ g.h_current.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.045),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(20px,1.8vw,28px);display:flex;flex-direction:column;justify-content:space-between;gap:24px;color:#F0F0F0">
+  <a data-card="" data-reveal="" href="#/experience" onClick="{{ goExperience }}" onMouseEnter="{{ hov.current }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.current }}" onBlur="{{ unhov }}" style="grid-column:{{ g.h_current.c }};grid-row:{{ g.h_current.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.045),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(20px,2vw,30px);display:flex;flex-direction:column;justify-content:space-between;gap:24px;color:#EEF4F1">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(200px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.3),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
-    <span style="display:flex;justify-content:space-between;align-items:center;gap:12px">
-      <span style="display:flex;align-items:center;gap:8px;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080"><span style="width:6px;height:6px;border-radius:50%;background:#D4B58A;box-shadow:0 0 12px rgba(212,181,138,.5)"></span>Currently</span>
-      <span aria-hidden="true" style="position:relative;flex:0 0 auto;width:40px;height:40px;border-radius:50%;overflow:hidden;border:1px solid {{ ar.current.bd }};background:{{ ar.current.bg }};color:{{ ar.current.fg }};transition:background .45s ease,color .45s ease,border-color .45s ease"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-6.5px 0 0 -6.5px;transform:{{ ar.current.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-6.5px 0 0 -6.5px;transform:{{ ar.current.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span>
-    </span>
-    <span style="font-size:clamp(17px,1.3vw,20px);line-height:1.4;letter-spacing:-0.012em;color:#C9C9C9;text-wrap:pretty">Working on the commercial side of <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:1.18em;color:#F0F0F0">Arkintel</span>, a Delft-based European AI company.</span>
+    <span style="display:flex;align-items:center;gap:8px;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A"><span style="width:6px;height:6px;border-radius:50%;background:#34D399;box-shadow:0 0 12px rgba(52,211,153,.55)"></span>Currently</span>
+    <span style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px"><span style="font-size:clamp(17px,1.3vw,20px);line-height:1.4;letter-spacing:-0.012em;color:#C6D4CD;text-wrap:pretty">Working on the commercial side of <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:1.18em;color:#EEF4F1">Arkintel</span>, a Delft-based European AI company.</span><span aria-hidden="true" style="position:relative;flex:0 0 auto;width:40px;height:40px;border-radius:50%;overflow:hidden;border:1px solid {{ ar.current.bd }};background:{{ ar.current.bg }};color:{{ ar.current.fg }};transition:background .45s ease,color .45s ease,border-color .45s ease"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-6.5px 0 0 -6.5px;transform:{{ ar.current.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-6.5px 0 0 -6.5px;transform:{{ ar.current.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span></span>
   </a>
 
-  <section data-card="" data-reveal="" aria-labelledby="h-exp" style="grid-column:{{ g.h_threads.c }};grid-row:{{ g.h_threads.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(620px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.04),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,2.8vw,40px);display:flex;flex-direction:column;gap:clamp(24px,3vw,40px)">
+  <section data-card="" data-reveal="" aria-labelledby="h-exp" style="grid-column:{{ g.h_threads.c }};grid-row:{{ g.h_threads.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(620px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.04),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3vw,48px);display:flex;flex-direction:column;gap:clamp(24px,3vw,40px)">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(240px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.3),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
     <div style="display:flex;justify-content:space-between;align-items:center;gap:16px">
-      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">Experience</span>
-      <a href="#/experience" onClick="{{ goExperience }}" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#BDBDBD;padding:6px 0;border-bottom:1px solid #3A3A3D;transition:color .3s ease,border-color .3s ease" style-hover="color:#FFFFFF;border-color:#F0F0F0">Full overview</a>
+      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A">Experience</span>
+      <a href="#/experience" onClick="{{ goExperience }}" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#BACAC2;padding:6px 0;border-bottom:1px solid #2E5242;transition:color .3s ease,border-color .3s ease" style-hover="color:#FFFFFF;border-color:#EEF4F1">Full overview</a>
     </div>
     <div style="display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 20px">
-      <span aria-hidden="true" style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(104px,10.5vw,176px);line-height:.74;letter-spacing:-0.04em;color:#F0F0F0">10+</span>
-      <h2 id="h-exp" style="margin:0 0 4px;max-width:250px;font-size:clamp(17px,1.35vw,20px);font-weight:400;letter-spacing:-0.012em;line-height:1.35;color:#BDBDBD;text-wrap:balance"><span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">10+ </span>years across creative, commercial and digital work.</h2>
+      <span aria-hidden="true" style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(104px,10.5vw,176px);line-height:.74;letter-spacing:-0.04em;color:#EEF4F1">10+</span>
+      <h2 id="h-exp" style="margin:0 0 4px;max-width:250px;font-size:clamp(17px,1.35vw,20px);font-weight:400;letter-spacing:-0.012em;line-height:1.35;color:#BACAC2;text-wrap:balance"><span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">10+ </span>years across creative, commercial and digital work.</h2>
     </div>
-    <div style="margin-top:auto;display:flex;flex-direction:column;border-bottom:1px solid #29292B">
+    <div style="margin-top:auto;display:flex;flex-direction:column;border-bottom:1px solid #213B30">
       <sc-for list="{{ threads }}" as="t" hint-placeholder-count="3">
-        <div style="border-top:1px solid #29292B">
+        <div style="border-top:1px solid #213B30">
           <button type="button" onMouseEnter="{{ t.on }}" onFocus="{{ t.on }}" onClick="{{ t.on }}" aria-expanded="{{ t.exp }}" style="width:100%;display:flex;align-items:baseline;gap:16px;padding:16px 0;background:none;border:0;cursor:pointer;text-align:left;font-family:inherit;color:{{ t.color }};transition:color .45s ease">
             <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:18px;width:28px;color:{{ t.ncolor }};transition:color .45s ease">{{ t.roman }}</span>
             <span style="flex:1;font-size:clamp(18px,1.55vw,23px);font-weight:500;letter-spacing:-0.022em">{{ t.title }}</span>
-            <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.16em;color:#D4B58A">{{ t.tag }}</span>
+            <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#34D399">{{ t.tag }}</span>
           </button>
           <div style="display:grid;grid-template-rows:{{ t.rows }};transition:grid-template-rows .65s cubic-bezier(.65,0,.35,1)">
             <div style="overflow:hidden">
-              <p style="margin:0;padding:0 0 20px 44px;max-width:540px;font-size:15px;line-height:1.6;color:#969696;opacity:{{ t.op }};transform:{{ t.tf }};transition:opacity .5s ease,transform .65s cubic-bezier(.2,.7,.2,1);text-wrap:pretty">{{ t.text }}</p>
+              <p style="margin:0;padding:0 0 20px 44px;max-width:540px;font-size:15px;line-height:1.6;color:#95A79E;opacity:{{ t.op }};transform:{{ t.tf }};transition:opacity .5s ease,transform .65s cubic-bezier(.2,.7,.2,1);text-wrap:pretty">{{ t.text }}</p>
             </div>
           </div>
         </div>
@@ -186,68 +183,68 @@ image-slot:not([data-filled]):hover{opacity:.55}
     </div>
   </section>
 
-  <figure data-card="" data-reveal="" onMouseEnter="{{ hov.featured }}" onMouseLeave="{{ unhov }}" style="grid-column:{{ g.h_featured.c }};grid-row:{{ g.h_featured.r }};margin:0;position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:#141415;min-height:420px">
+  <figure data-card="" data-reveal="" onMouseEnter="{{ hov.featured }}" onMouseLeave="{{ unhov }}" style="grid-column:{{ g.h_featured.c }};grid-row:{{ g.h_featured.r }};margin:0;position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:#0D1A15;min-height:420px">
     <div data-media="" style="position:absolute;inset:0;transition:transform 1.4s cubic-bezier(.2,.7,.2,1),filter 1s ease">
-      <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(110% 80% at 70% 10%,#262628 0%,#18181A 50%,#111112 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding-bottom:90px">
-        <span style="position:absolute;left:16px;top:16px;width:14px;height:14px;border-left:1px solid #3C3C3F;border-top:1px solid #3C3C3F"></span>
-        <span style="position:absolute;right:16px;top:16px;width:14px;height:14px;border-right:1px solid #3C3C3F;border-top:1px solid #3C3C3F"></span>
-        <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(38px,3.4vw,56px);color:#4A4A4D">Featured work</span>
-        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.2em;color:#5E5E61">DROP A GENUINE PROJECT IMAGE</span>
+      <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(110% 80% at 70% 10%,#1D3429 0%,#12221B 50%,#0B1612 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding-bottom:90px">
+        <span style="position:absolute;left:16px;top:16px;width:14px;height:14px;border-left:1px solid #305544;border-top:1px solid #305544"></span>
+        <span style="position:absolute;right:16px;top:16px;width:14px;height:14px;border-right:1px solid #305544;border-top:1px solid #305544"></span>
+        <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(38px,3.4vw,56px);color:#3D5E4F">Featured work</span>
+        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.2em;color:#556F62">DROP A GENUINE PROJECT IMAGE</span>
       </div>
       <image-slot id="lo-home-featured" shape="rect" placeholder="Featured work — a real project" style="position:absolute;inset:0;width:100%;height:100%"></image-slot>
     </div>
     <span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(11,11,12,0) 45%,rgba(11,11,12,.55) 70%,rgba(11,11,12,.9) 100%)"></span>
     <figcaption style="position:absolute;left:0;right:0;bottom:0;padding:clamp(20px,2.4vw,32px);display:flex;align-items:flex-end;justify-content:space-between;gap:20px;pointer-events:none">
       <span style="display:flex;flex-direction:column;gap:12px">
-        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#B5B5B5">Selected work</span>
-        <span style="max-width:360px;font-size:clamp(19px,1.6vw,24px);font-weight:500;letter-spacing:-0.022em;line-height:1.22;color:#F0F0F0;text-wrap:balance">Creative, communication and technology — ten years of it.</span>
+        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#B2C2BA">Selected work</span>
+        <span style="max-width:360px;font-size:clamp(19px,1.6vw,24px);font-weight:500;letter-spacing:-0.022em;line-height:1.22;color:#EEF4F1;text-wrap:balance">Creative, communication and technology — ten years of it.</span>
       </span>
       <a href="#/experience" onClick="{{ goExperience }}" aria-label="See experience" style="pointer-events:auto;position:relative;flex:0 0 auto;width:48px;height:48px;border-radius:50%;overflow:hidden;border:1px solid {{ ar.featured.bd }};background:{{ ar.featured.bgd }};backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:{{ ar.featured.fg }};transition:background .45s ease,color .45s ease,border-color .45s ease"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.featured.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.featured.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
     </figcaption>
   </figure>
 
-  <a data-card="" data-reveal="" href="#/about" onClick="{{ goAbout }}" onMouseEnter="{{ hov.about }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.about }}" onBlur="{{ unhov }}" style="grid-column:{{ g.h_about.c }};grid-row:{{ g.h_about.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.045),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(22px,2.2vw,32px);display:flex;flex-direction:column;justify-content:space-between;gap:24px;color:#F0F0F0">
+  <a data-card="" data-reveal="" href="#/about" onClick="{{ goAbout }}" onMouseEnter="{{ hov.about }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.about }}" onBlur="{{ unhov }}" style="grid-column:{{ g.h_about.c }};grid-row:{{ g.h_about.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.045),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(20px,2vw,30px);display:flex;flex-direction:column;justify-content:space-between;gap:24px;color:#EEF4F1">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(200px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.3),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
-    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">About</span>
+    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A">About</span>
     <span style="display:flex;flex-direction:column;gap:12px">
-      <span style="font-size:clamp(21px,1.75vw,26px);font-weight:500;letter-spacing:-0.025em;line-height:1.18;color:#F0F0F0;text-wrap:balance">A creative mind with a <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.12em;color:#E8E1D5">commercial</span> instinct.</span>
+      <span style="font-size:clamp(21px,1.75vw,26px);font-weight:500;letter-spacing:-0.025em;line-height:1.18;color:#EEF4F1;text-wrap:balance">A creative mind with a <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.12em;color:#6EE7B7">commercial</span> instinct.</span>
       <span style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px">
-        <span style="max-width:260px;font-size:14px;line-height:1.55;color:#8C8C8C;text-wrap:pretty">Multidisciplinary by habit. Always interested in the bigger picture.</span>
+        <span style="max-width:260px;font-size:14px;line-height:1.55;color:#8A9D94;text-wrap:pretty">Multidisciplinary by habit. Always interested in the bigger picture.</span>
         <span aria-hidden="true" style="position:relative;flex:0 0 auto;width:44px;height:44px;border-radius:50%;overflow:hidden;border:1px solid {{ ar.about.bd }};background:{{ ar.about.bg }};color:{{ ar.about.fg }};transition:background .45s ease,color .45s ease,border-color .45s ease"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.about.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.about.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span>
       </span>
     </span>
   </a>
 
-  <figure data-card="" data-reveal="" style="grid-column:{{ g.h_visual.c }};grid-row:{{ g.h_visual.r }};margin:0;position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:#141415;min-height:160px">
+  <figure data-card="" data-reveal="" style="grid-column:{{ g.h_visual.c }};grid-row:{{ g.h_visual.r }};margin:0;position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:#0D1A15;min-height:160px">
     <div data-media="" style="position:absolute;inset:0;transition:transform 1.4s cubic-bezier(.2,.7,.2,1),filter 1s ease">
-      <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(110% 90% at 80% 100%,#252527 0%,#171718 55%,#121213 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">
-        <span style="position:absolute;left:16px;top:16px;width:14px;height:14px;border-left:1px solid #3C3C3F;border-top:1px solid #3C3C3F"></span>
-        <span style="position:absolute;right:16px;bottom:16px;width:14px;height:14px;border-right:1px solid #3C3C3F;border-bottom:1px solid #3C3C3F"></span>
-        <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(28px,2.4vw,38px);color:#4A4A4D">Workspace</span>
-        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.2em;color:#5E5E61">DROP AN IMAGE</span>
+      <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(110% 90% at 80% 100%,#1C3329 0%,#11201A 55%,#0C1813 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">
+        <span style="position:absolute;left:16px;top:16px;width:14px;height:14px;border-left:1px solid #305544;border-top:1px solid #305544"></span>
+        <span style="position:absolute;right:16px;bottom:16px;width:14px;height:14px;border-right:1px solid #305544;border-bottom:1px solid #305544"></span>
+        <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(28px,2.4vw,38px);color:#3D5E4F">Workspace</span>
+        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.2em;color:#556F62">DROP AN IMAGE</span>
       </div>
       <image-slot id="lo-home-visual-1" shape="rect" placeholder="Workspace or detail" style="position:absolute;inset:0;width:100%;height:100%"></image-slot>
     </div>
   </figure>
 
-  <section data-card="" data-reveal="" aria-labelledby="h-contact" style="grid-column:{{ g.h_contact.c }};grid-row:{{ g.h_contact.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(720px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.04),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3.4vw,56px);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:32px 56px">
+  <section data-card="" data-reveal="" aria-labelledby="h-contact" style="grid-column:{{ g.h_contact.c }};grid-row:{{ g.h_contact.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(720px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.04),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3vw,48px);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:32px 56px">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(260px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.3),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
     <div style="flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:clamp(20px,2.4vw,36px)">
-      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">Contact</span>
-      <h2 id="h-contact" style="margin:0;font-size:clamp(38px,5vw,84px);font-weight:500;letter-spacing:-0.048em;line-height:.98;color:#F0F0F0">
+      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A">Contact</span>
+      <h2 id="h-contact" style="margin:0;font-size:clamp(38px,5vw,84px);font-weight:500;letter-spacing:-0.048em;line-height:.98;color:#EEF4F1">
         <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block">Good conversations</span></span>
-        <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.1em;letter-spacing:-0.025em;color:#E8E1D5">start somewhere.</span></span>
+        <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.1em;letter-spacing:-0.025em;color:#6EE7B7">start somewhere.</span></span>
       </h2>
     </div>
     <div style="flex:0 1 auto;display:flex;flex-direction:column;align-items:flex-start;gap:18px">
-      <a href="{{ mailto }}" style="font-size:clamp(17px,1.4vw,21px);letter-spacing:-0.01em;color:#D6D6D6;padding-bottom:4px;border-bottom:1px solid #3A3A3D;overflow-wrap:anywhere;transition:color .3s ease,border-color .3s ease" style-hover="color:#FFFFFF;border-color:#F0F0F0">{{ email }}</a>
+      <a href="{{ mailto }}" style="font-size:clamp(17px,1.4vw,21px);letter-spacing:-0.01em;color:#D3DFD9;padding-bottom:4px;border-bottom:1px solid #2E5242;overflow-wrap:anywhere;transition:color .3s ease,border-color .3s ease" style-hover="color:#FFFFFF;border-color:#EEF4F1">{{ email }}</a>
       <div style="display:flex;flex-wrap:wrap;gap:8px">
-        <button type="button" onClick="{{ copyEmail }}" aria-label="{{ copyAria }}" style="height:52px;padding:0 20px;border-radius:16px;border:0;background:#EDEDED;color:#0B0B0C;font-family:inherit;font-size:15px;font-weight:500;display:flex;align-items:center;gap:10px;cursor:pointer;box-shadow:inset 0 -2px 0 rgba(0,0,0,.08);transition:background .4s ease" style-hover="background:#FFFFFF">
+        <button type="button" onClick="{{ copyEmail }}" aria-label="{{ copyAria }}" style="height:52px;padding:0 20px;border-radius:16px;border:0;background:#34D399;color:#06100C;font-family:inherit;font-size:15px;font-weight:500;display:flex;align-items:center;gap:10px;cursor:pointer;box-shadow:inset 0 -2px 0 rgba(0,0,0,.08);transition:background .4s ease" style-hover="background:#6EE7B7">
           <span aria-live="polite">{{ copyLabel }}</span>
           <sc-if value="{{ notCopied }}" hint-placeholder-val="{{ true }}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"></rect><path d="M5 15V6a2 2 0 0 1 2-2h8"></path></svg></sc-if>
           <sc-if value="{{ copied }}" hint-placeholder-val="{{ false }}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 10 17l9-10"></path></svg></sc-if>
         </button>
-        <a href="#/contact" onClick="{{ goContact }}" style="height:52px;padding:0 20px;border-radius:16px;border:1px solid #303032;color:#D6D6D6;display:flex;align-items:center;font-size:15px;font-weight:500;transition:background .4s ease,border-color .4s ease,color .4s ease" style-hover="background:#202021;border-color:#46464A;color:#FFFFFF">Contact page</a>
+        <a href="#/contact" onClick="{{ goContact }}" style="height:52px;padding:0 20px;border-radius:16px;border:1px solid #264437;color:#D3DFD9;display:flex;align-items:center;font-size:15px;font-weight:500;transition:background .4s ease,border-color .4s ease,color .4s ease" style-hover="background:#172B22;border-color:#3A6352;color:#FFFFFF">Contact page</a>
       </div>
     </div>
   </section>
@@ -256,108 +253,105 @@ image-slot:not([data-filled]):hover{opacity:.55}
 
 <sc-if value="{{ isAbout }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="About" style="display:grid;grid-template-columns:{{ cols }};grid-auto-rows:{{ rows }};grid-auto-flow:dense;gap:clamp(8px,.9vw,14px)">
-  <section data-card="" data-reveal="" aria-labelledby="a-title" style="grid-column:{{ g.a_title.c }};grid-row:{{ g.a_title.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(620px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.04),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3.4vw,56px);display:flex;flex-direction:column;justify-content:space-between;gap:clamp(36px,5vw,72px)">
+  <section data-card="" data-reveal="" aria-labelledby="a-title" style="grid-column:{{ g.a_title.c }};grid-row:{{ g.a_title.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(620px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.04),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3vw,48px);display:flex;flex-direction:column;justify-content:space-between;gap:clamp(36px,5vw,72px)">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(240px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.3),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
     <div style="display:flex;justify-content:space-between;gap:16px">
-      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">About</span>
-      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">A short profile</span>
+      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A">About</span>
+      
     </div>
-    <h1 id="a-title" style="margin:0;font-size:clamp(52px,7.2vw,124px);font-weight:500;letter-spacing:-0.055em;line-height:.92;color:#F0F0F0">
+    <h1 id="a-title" style="margin:0;font-size:clamp(52px,7.2vw,124px);font-weight:500;letter-spacing:-0.055em;line-height:.92;color:#EEF4F1">
       <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block">A little</span></span>
-      <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block"><span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.1em;letter-spacing:-0.03em;color:#E8E1D5">about</span> me.</span></span>
+      <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block"><span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.1em;letter-spacing:-0.03em;color:#6EE7B7">about</span> me.</span></span>
     </h1>
-    <div style="display:flex;flex-wrap:wrap;gap:20px clamp(24px,4vw,64px);padding-top:clamp(20px,2vw,28px);border-top:1px solid #262628">
-      <p style="flex:1 1 300px;margin:0;font-size:clamp(17px,1.35vw,20px);line-height:1.55;letter-spacing:-0.01em;color:#A3A3A3;text-wrap:pretty"><span style="color:#F0F0F0">I'm originally from Ireland</span> and spent close to a decade living and working in the Netherlands.</p>
-      <p style="flex:1 1 300px;margin:0;font-size:clamp(17px,1.35vw,20px);line-height:1.55;letter-spacing:-0.01em;color:#A3A3A3;text-wrap:pretty">Along the way, I've worked across different creative and commercial environments, learning that the most interesting work rarely fits neatly into one job description.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:20px clamp(24px,4vw,64px);padding-top:clamp(20px,2vw,28px);border-top:1px solid #1D3429">
+      <p style="flex:1 1 300px;margin:0;font-size:clamp(17px,1.35vw,20px);line-height:1.55;letter-spacing:-0.01em;color:#A2B3AB;text-wrap:pretty"><span style="color:#EEF4F1">I'm originally from Ireland</span> and spent close to a decade living and working in the Netherlands.</p>
+      <p style="flex:1 1 300px;margin:0;font-size:clamp(17px,1.35vw,20px);line-height:1.55;letter-spacing:-0.01em;color:#A2B3AB;text-wrap:pretty">Along the way, I've worked across different creative and commercial environments, learning that the most interesting work rarely fits neatly into one job description.</p>
     </div>
   </section>
 
-  <figure data-card="" data-reveal="" style="grid-column:{{ g.a_portrait.c }};grid-row:{{ g.a_portrait.r }};margin:0;position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:#141415;min-height:420px">
+  <figure data-card="" data-reveal="" style="grid-column:{{ g.a_portrait.c }};grid-row:{{ g.a_portrait.r }};margin:0;position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:#0D1A15;min-height:420px">
     <div data-media="" style="position:absolute;inset:0;transition:transform 1.4s cubic-bezier(.2,.7,.2,1),filter 1s ease">
-      <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(120% 80% at 30% 0%,#262628 0%,#171718 50%,#111112 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
-        <span style="position:absolute;left:16px;top:16px;width:14px;height:14px;border-left:1px solid #3C3C3F;border-top:1px solid #3C3C3F"></span>
-        <span style="position:absolute;right:16px;top:16px;width:14px;height:14px;border-right:1px solid #3C3C3F;border-top:1px solid #3C3C3F"></span>
-        <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(38px,3.4vw,56px);color:#4A4A4D">Portrait</span>
-        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.2em;color:#5E5E61">DROP A PHOTOGRAPH</span>
+      <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(120% 80% at 30% 0%,#1D3429 0%,#11201A 50%,#0B1612 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+        <span style="position:absolute;left:16px;top:16px;width:14px;height:14px;border-left:1px solid #305544;border-top:1px solid #305544"></span>
+        <span style="position:absolute;right:16px;top:16px;width:14px;height:14px;border-right:1px solid #305544;border-top:1px solid #305544"></span>
+        <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(38px,3.4vw,56px);color:#3D5E4F">Portrait</span>
+        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.2em;color:#556F62">DROP A PHOTOGRAPH</span>
       </div>
       <image-slot id="lo-portrait" shape="rect" placeholder="Your portrait" style="position:absolute;inset:0;width:100%;height:100%"></image-slot>
     </div>
     <span aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(11,11,12,0) 60%,rgba(11,11,12,.75) 100%)"></span>
     <figcaption style="position:absolute;left:22px;right:22px;bottom:20px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;pointer-events:none">
-      <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:26px;line-height:1;color:#F0F0F0">Lorcan.</span>
-      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.18em;color:#B5B5B5">IRELAND · NETHERLANDS</span>
+      <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:26px;line-height:1;color:#EEF4F1">Lorcan.</span>
+      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#B2C2BA">IRELAND · NETHERLANDS</span>
     </figcaption>
   </figure>
 
-  <section data-card="" data-reveal="" aria-label="Ireland and the Netherlands" style="grid-column:{{ g.a_places.c }};grid-row:{{ g.a_places.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.045),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(22px,2.4vw,36px);display:flex;flex-direction:column;justify-content:space-between;gap:28px">
+  <section data-card="" data-reveal="" aria-label="Ireland and the Netherlands" style="grid-column:{{ g.a_places.c }};grid-row:{{ g.a_places.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.045),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(20px,2vw,30px);display:flex;flex-direction:column;justify-content:space-between;gap:28px">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(200px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.3),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
-    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">Two places</span>
+    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A">Two places</span>
     <div style="display:flex;align-items:flex-end;gap:16px">
       <div style="display:flex;flex-direction:column;gap:8px;min-width:0">
-        <span style="font-size:clamp(24px,2.1vw,32px);font-weight:500;letter-spacing:-0.03em;line-height:1;color:#F0F0F0">Ireland</span>
-        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.16em;color:#808080">WHERE I'M FROM</span>
+        <span style="font-size:clamp(24px,2.1vw,32px);font-weight:500;letter-spacing:-0.03em;line-height:1;color:#EEF4F1">Ireland</span>
+        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#7E948A">WHERE I'M FROM</span>
       </div>
-      <span aria-hidden="true" style="flex:1;min-width:24px;height:1px;margin-bottom:30px;background:linear-gradient(90deg,#3A3A3D,#D4B58A 50%,#3A3A3D)"></span>
+      <span aria-hidden="true" style="flex:1;min-width:24px;height:1px;margin-bottom:30px;background:linear-gradient(90deg,#2E5242,#34D399 50%,#2E5242)"></span>
       <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end;text-align:right;min-width:0">
-        <span style="font-size:clamp(24px,2.1vw,32px);font-weight:500;letter-spacing:-0.03em;line-height:1;color:#F0F0F0">Netherlands</span>
-        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.16em;color:#808080">CLOSE TO A DECADE</span>
+        <span style="font-size:clamp(24px,2.1vw,32px);font-weight:500;letter-spacing:-0.03em;line-height:1;color:#EEF4F1">Netherlands</span>
+        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#7E948A">CLOSE TO A DECADE</span>
       </div>
     </div>
-    <p style="margin:0;font-size:15px;line-height:1.55;color:#969696;text-wrap:pretty">An Irish ease with conversation. A Dutch habit of saying what you mean.</p>
+    <p style="margin:0;font-size:15px;line-height:1.55;color:#95A79E;text-wrap:pretty">An Irish ease with conversation. A Dutch habit of saying what you mean.</p>
   </section>
 
-  <figure data-card="" data-reveal="" style="grid-column:{{ g.a_quote.c }};grid-row:{{ g.a_quote.r }};margin:0;position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #303032;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.05),transparent 62%),linear-gradient(180deg,#222224 0%,#1C1C1D 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(22px,2.4vw,36px);display:flex;flex-direction:column;justify-content:space-between;gap:24px">
+  <figure data-card="" data-reveal="" style="grid-column:{{ g.a_quote.c }};grid-row:{{ g.a_quote.r }};margin:0;position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #264437;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.05),transparent 62%),linear-gradient(180deg,#192E25 0%,#15281F 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(20px,2vw,30px);display:flex;flex-direction:column;justify-content:space-between;gap:24px">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(200px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.32),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
-    <figcaption style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8C8C8C">Something I've learned</figcaption>
-    <blockquote style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(25px,2.3vw,36px);line-height:1.1;letter-spacing:-0.015em;color:#F0F0F0;text-wrap:balance">“The most interesting work rarely fits neatly into one job description.”</blockquote>
+    <figcaption style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8A9D94">Something I've learned</figcaption>
+    <blockquote style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(25px,2.3vw,36px);line-height:1.1;letter-spacing:-0.015em;color:#EEF4F1;text-wrap:balance">“The most interesting work rarely fits neatly into one job description.”</blockquote>
   </figure>
 
-  <section data-card="" data-reveal="" aria-labelledby="a-story" style="grid-column:{{ g.a_story.c }};grid-row:{{ g.a_story.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(620px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.035),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3vw,48px);display:flex;flex-direction:column;gap:clamp(24px,3vw,40px)">
+  <section data-card="" data-reveal="" aria-labelledby="a-story" style="grid-column:{{ g.a_story.c }};grid-row:{{ g.a_story.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(620px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.035),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3vw,48px);display:flex;flex-direction:column;gap:clamp(24px,3vw,40px)">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(240px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.28),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
     <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px 40px">
       <div style="display:flex;flex-direction:column;gap:16px">
-        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">How I got here</span>
-        <h2 id="a-story" style="margin:0;font-size:clamp(32px,3.4vw,54px);font-weight:500;letter-spacing:-0.045em;line-height:1;color:#F0F0F0">Not a straight <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.1em;color:#E8E1D5">line.</span></h2>
+        <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A">How I got here</span>
+        <h2 id="a-story" style="margin:0;font-size:clamp(32px,3.4vw,54px);font-weight:500;letter-spacing:-0.045em;line-height:1;color:#EEF4F1">Not a straight <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.1em;color:#6EE7B7">line.</span></h2>
       </div>
-      <p style="margin:0;max-width:320px;font-size:15px;line-height:1.55;color:#8C8C8C">More a series of things I got curious about, and then got good at.</p>
+      <p style="margin:0;max-width:320px;font-size:15px;line-height:1.55;color:#8A9D94">More a series of things I got curious about, and then got good at.</p>
     </div>
     <div style="display:flex;flex-direction:column">
       <sc-for list="{{ story }}" as="s" hint-placeholder-count="3">
-        <article style="display:flex;flex-wrap:wrap;gap:10px clamp(20px,3vw,48px);padding:clamp(18px,2vw,26px) 0;border-top:1px solid #29292B">
-          <span style="flex:0 0 44px;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:30px;line-height:1;color:#6E6E70">{{ s.roman }}</span>
-          <h3 style="flex:1 1 200px;margin:0;font-size:clamp(19px,1.5vw,22px);font-weight:500;letter-spacing:-0.02em;line-height:1.2;color:#F0F0F0">{{ s.title }}</h3>
-          <p style="flex:1.6 1 300px;margin:0;font-size:15px;line-height:1.62;color:#969696;text-wrap:pretty">{{ s.text }}</p>
+        <article style="display:flex;flex-wrap:wrap;gap:10px clamp(20px,3vw,48px);padding:clamp(18px,2vw,26px) 0;border-top:1px solid #213B30">
+          <span style="flex:0 0 44px;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:30px;line-height:1;color:#61796D">{{ s.roman }}</span>
+          <h3 style="flex:1 1 200px;margin:0;font-size:clamp(19px,1.5vw,22px);font-weight:500;letter-spacing:-0.02em;line-height:1.2;color:#EEF4F1">{{ s.title }}</h3>
+          <p style="flex:1.6 1 300px;margin:0;font-size:15px;line-height:1.62;color:#95A79E;text-wrap:pretty">{{ s.text }}</p>
         </article>
       </sc-for>
     </div>
   </section>
 
-  <article data-card="" data-reveal="" style="grid-column:{{ g.a_now.c }};grid-row:{{ g.a_now.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #303032;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.05),transparent 62%),linear-gradient(180deg,#222224 0%,#1C1C1D 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(22px,2.4vw,36px);display:flex;flex-direction:column;justify-content:space-between;gap:24px">
+  <article data-card="" data-reveal="" style="grid-column:{{ g.a_now.c }};grid-row:{{ g.a_now.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #264437;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.05),transparent 62%),linear-gradient(180deg,#192E25 0%,#15281F 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(20px,2vw,30px);display:flex;flex-direction:column;justify-content:space-between;gap:24px">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(200px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.32),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
-    <span style="display:flex;align-items:center;gap:8px;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8C8C8C"><span style="width:6px;height:6px;border-radius:50%;background:#D4B58A;box-shadow:0 0 12px rgba(212,181,138,.5)"></span>iv · Now</span>
+    <span style="display:flex;align-items:center;gap:8px;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8A9D94"><span style="width:6px;height:6px;border-radius:50%;background:#34D399;box-shadow:0 0 12px rgba(52,211,153,.55)"></span>iv · Now</span>
     <div style="display:flex;flex-direction:column;gap:12px">
-      <h2 style="margin:0;font-size:clamp(21px,1.75vw,26px);font-weight:500;letter-spacing:-0.025em;line-height:1.18;color:#F0F0F0">Conversations about AI</h2>
-      <p style="margin:0;font-size:15px;line-height:1.6;color:#A3A3A3;text-wrap:pretty">That curiosity led me to Arkintel, a Delft-based AI company. I work on the commercial side: talking with organisations, building relationships and helping explain why enterprise AI matters to the way they actually work.</p>
+      <h2 style="margin:0;font-size:clamp(21px,1.75vw,26px);font-weight:500;letter-spacing:-0.025em;line-height:1.18;color:#EEF4F1">Conversations about AI</h2>
+      <p style="margin:0;font-size:15px;line-height:1.6;color:#A2B3AB;text-wrap:pretty">That curiosity led me to Arkintel, a Delft-based AI company. I work on the commercial side: talking with organisations, building relationships and helping explain why enterprise AI matters to the way they actually work.</p>
     </div>
   </article>
 
-  <a data-card="" data-reveal="" href="#/experience" onClick="{{ goExperience }}" onMouseEnter="{{ hov.a_teams }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.a_teams }}" onBlur="{{ unhov }}" style="grid-column:{{ g.a_teams.c }};grid-row:{{ g.a_teams.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.045),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(22px,2.4vw,36px);display:flex;flex-direction:column;justify-content:space-between;gap:24px;color:#F0F0F0">
+  <a data-card="" data-reveal="" href="#/experience" onClick="{{ goExperience }}" onMouseEnter="{{ hov.a_teams }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.a_teams }}" onBlur="{{ unhov }}" style="grid-column:{{ g.a_teams.c }};grid-row:{{ g.a_teams.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.045),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(20px,2vw,30px);display:flex;flex-direction:column;justify-content:space-between;gap:24px;color:#EEF4F1">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(200px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.3),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
-    <span style="display:flex;justify-content:space-between;align-items:center;gap:16px">
-      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">v · How I like to work</span>
-      <span aria-hidden="true" style="position:relative;flex:0 0 auto;width:44px;height:44px;border-radius:50%;overflow:hidden;border:1px solid {{ ar.a_teams.bd }};background:{{ ar.a_teams.bg }};color:{{ ar.a_teams.fg }};transition:background .45s ease,color .45s ease,border-color .45s ease"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.a_teams.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.a_teams.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span>
-    </span>
-    <span style="display:flex;flex-direction:column;gap:12px">
-      <span style="font-size:clamp(21px,1.75vw,26px);font-weight:500;letter-spacing:-0.025em;line-height:1.18;color:#F0F0F0">Small teams, real contribution.</span>
-      <span style="font-size:15px;line-height:1.6;color:#969696;text-wrap:pretty">I'm at my best where ideas move quickly and nobody hides behind a job title. If something needs doing and I can help, I'd rather pitch in.</span>
-    </span>
+    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A">v · How I like to work</span>
+    <span style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px"><span style="display:flex;flex-direction:column;gap:12px">
+      <span style="font-size:clamp(21px,1.75vw,26px);font-weight:500;letter-spacing:-0.025em;line-height:1.18;color:#EEF4F1">Small teams, real contribution.</span>
+      <span style="font-size:15px;line-height:1.6;color:#95A79E;text-wrap:pretty">I'm at my best where ideas move quickly and nobody hides behind a job title. If something needs doing and I can help, I'd rather pitch in.</span>
+    </span><span aria-hidden="true" style="position:relative;flex:0 0 auto;width:44px;height:44px;border-radius:50%;overflow:hidden;border:1px solid {{ ar.a_teams.bd }};background:{{ ar.a_teams.bg }};color:{{ ar.a_teams.fg }};transition:background .45s ease,color .45s ease,border-color .45s ease"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.a_teams.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.a_teams.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span></span>
   </a>
 
-  <a data-card="" data-reveal="" href="#/experience" onClick="{{ goExperience }}" onMouseEnter="{{ hov.a_next }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.a_next }}" onBlur="{{ unhov }}" style="grid-column:{{ g.a_next.c }};grid-row:{{ g.a_next.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(720px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.04),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3vw,48px);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;color:#F0F0F0">
+  <a data-card="" data-reveal="" href="#/experience" onClick="{{ goExperience }}" onMouseEnter="{{ hov.a_next }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.a_next }}" onBlur="{{ unhov }}" style="grid-column:{{ g.a_next.c }};grid-row:{{ g.a_next.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(720px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.04),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3vw,48px);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;color:#EEF4F1">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(260px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.3),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
     <span style="display:flex;flex-direction:column;gap:clamp(16px,2vw,28px)">
-      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">Next chapter</span>
-      <span style="font-size:clamp(48px,7vw,120px);font-weight:500;letter-spacing:-0.055em;line-height:.9;color:#F0F0F0;transform:{{ ar.a_next.shift }};transition:transform .8s cubic-bezier(.19,1,.22,1)">Experience<span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;color:#E8E1D5">.</span></span>
+      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A">Next chapter</span>
+      <span style="font-size:clamp(48px,7vw,120px);font-weight:500;letter-spacing:-0.055em;line-height:.9;color:#EEF4F1;transform:{{ ar.a_next.shift }};transition:transform .8s cubic-bezier(.19,1,.22,1)">Experience<span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;color:#6EE7B7">.</span></span>
     </span>
     <span aria-hidden="true" style="position:relative;flex:0 0 auto;width:clamp(56px,5vw,72px);height:clamp(56px,5vw,72px);border-radius:50%;overflow:hidden;border:1px solid {{ ar.a_next.bd }};background:{{ ar.a_next.bg }};color:{{ ar.a_next.fg }};transition:background .45s ease,color .45s ease,border-color .45s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-10px 0 0 -10px;transform:{{ ar.a_next.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-10px 0 0 -10px;transform:{{ ar.a_next.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span>
   </a>
@@ -366,95 +360,95 @@ image-slot:not([data-filled]):hover{opacity:.55}
 
 <sc-if value="{{ isExperience }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Experience" style="display:grid;grid-template-columns:{{ cols }};grid-auto-rows:{{ rows }};grid-auto-flow:dense;gap:clamp(8px,.9vw,14px)">
-  <section data-card="" data-reveal="" aria-labelledby="e-title" style="grid-column:{{ g.e_title.c }};grid-row:{{ g.e_title.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(620px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.04),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3.4vw,56px);display:flex;flex-direction:column;justify-content:space-between;gap:clamp(32px,4vw,56px)">
+  <section data-card="" data-reveal="" aria-labelledby="e-title" style="grid-column:{{ g.e_title.c }};grid-row:{{ g.e_title.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(620px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.04),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3vw,48px);display:flex;flex-direction:column;justify-content:space-between;gap:clamp(32px,4vw,56px)">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(240px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.3),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
-    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">Experience</span>
-    <h1 id="e-title" style="margin:0;font-size:clamp(40px,5vw,86px);font-weight:500;letter-spacing:-0.05em;line-height:.96;color:#F0F0F0">
+    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A">Experience</span>
+    <h1 id="e-title" style="margin:0;font-size:clamp(40px,5vw,86px);font-weight:500;letter-spacing:-0.05em;line-height:.96;color:#EEF4F1">
       <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block">A varied background.</span></span>
-      <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.1em;letter-spacing:-0.025em;color:#E8E1D5">A connected way of thinking.</span></span>
+      <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.1em;letter-spacing:-0.025em;color:#6EE7B7">A connected way of thinking.</span></span>
     </h1>
-    <p style="margin:0;max-width:560px;padding-top:clamp(20px,2vw,28px);border-top:1px solid #262628;font-size:clamp(16px,1.3vw,19px);line-height:1.55;letter-spacing:-0.01em;color:#A3A3A3;text-wrap:pretty">More than ten years across creative, commercial and, most recently, technology work. Different rooms, same habit: work out what matters, then make it clear.</p>
+    <p style="margin:0;max-width:560px;padding-top:clamp(20px,2vw,28px);border-top:1px solid #1D3429;font-size:clamp(16px,1.3vw,19px);line-height:1.55;letter-spacing:-0.01em;color:#A2B3AB;text-wrap:pretty">More than ten years across creative, commercial and, most recently, technology work. Different rooms, same habit: work out what matters, then make it clear.</p>
   </section>
 
-  <section data-card="" data-reveal="" aria-label="Years of experience" style="grid-column:{{ g.e_years.c }};grid-row:{{ g.e_years.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #303032;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.05),transparent 62%),linear-gradient(180deg,#222224 0%,#1C1C1D 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(22px,2.4vw,32px);display:flex;align-items:flex-end;justify-content:space-between;gap:16px">
+  <section data-card="" data-reveal="" aria-label="Years of experience" style="grid-column:{{ g.e_years.c }};grid-row:{{ g.e_years.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #264437;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.05),transparent 62%),linear-gradient(180deg,#192E25 0%,#15281F 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(20px,2vw,30px);display:flex;flex-direction:column;justify-content:space-between;gap:20px">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(200px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.32),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
-    <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(96px,9vw,156px);line-height:.74;letter-spacing:-0.04em;color:#F0F0F0">10+</span>
-    <span style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;text-align:right;align-self:stretch;justify-content:space-between">
-      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8C8C8C">Years</span>
-      <span style="max-width:150px;font-size:14px;line-height:1.45;color:#A3A3A3">Creative, commercial and digital.</span>
+    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8A9D94">Years</span>
+    <span style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px">
+      <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(88px,8vw,140px);line-height:.74;letter-spacing:-0.04em;color:#EEF4F1">10+</span>
+      <span style="max-width:150px;font-size:14px;line-height:1.45;color:#A2B3AB;text-align:right">Creative, commercial and digital.</span>
     </span>
   </section>
 
-  <a data-card="" data-reveal="" href="{{ cvHref }}" target="{{ cvTarget }}" rel="noopener" onMouseEnter="{{ hov.e_cv }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.e_cv }}" onBlur="{{ unhov }}" style="grid-column:{{ g.e_cv.c }};grid-row:{{ g.e_cv.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.045),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(22px,2.4vw,32px);display:flex;flex-direction:column;justify-content:space-between;gap:24px;color:#F0F0F0">
+  <a data-card="" data-reveal="" href="{{ cvHref }}" target="{{ cvTarget }}" rel="noopener" onMouseEnter="{{ hov.e_cv }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.e_cv }}" onBlur="{{ unhov }}" style="grid-column:{{ g.e_cv.c }};grid-row:{{ g.e_cv.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.045),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(20px,2vw,30px);display:flex;flex-direction:column;justify-content:space-between;gap:24px;color:#EEF4F1">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(200px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.3),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
-    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">The full picture</span>
+    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A">The full picture</span>
     <span style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px">
       <span style="display:flex;flex-direction:column;gap:8px">
-        <span style="font-size:clamp(19px,1.55vw,23px);font-weight:500;letter-spacing:-0.02em;line-height:1.22;color:#F0F0F0;text-wrap:balance">Employers, roles and dates live in my CV.</span>
-        <span style="font-size:14px;color:#8C8C8C">{{ cvLabel }}</span>
+        <span style="font-size:clamp(19px,1.55vw,23px);font-weight:500;letter-spacing:-0.02em;line-height:1.22;color:#EEF4F1;text-wrap:balance">Employers, roles and dates live in my CV.</span>
+        <span style="font-size:14px;color:#8A9D94">{{ cvLabel }}</span>
       </span>
       <span aria-hidden="true" style="position:relative;flex:0 0 auto;width:44px;height:44px;border-radius:50%;overflow:hidden;border:1px solid {{ ar.e_cv.bd }};background:{{ ar.e_cv.bg }};color:{{ ar.e_cv.fg }};transition:background .45s ease,color .45s ease,border-color .45s ease"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.e_cv.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.e_cv.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span>
     </span>
   </a>
 
-  <section data-reveal="" aria-labelledby="e-areas" style="grid-column:{{ g.e_areas.c }};grid-row:{{ g.e_areas.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(22px,2.8vw,44px);display:flex;flex-direction:column;gap:clamp(24px,3vw,40px)">
+  <section data-reveal="" aria-labelledby="e-areas" style="grid-column:{{ g.e_areas.c }};grid-row:{{ g.e_areas.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3vw,48px);display:flex;flex-direction:column;gap:clamp(24px,3vw,40px)">
     <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px 32px">
-      <h2 id="e-areas" style="margin:0;font-size:clamp(28px,2.8vw,44px);font-weight:500;letter-spacing:-0.04em;line-height:1;color:#F0F0F0">Three threads.</h2>
-      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">Creative → Commercial → Technology</span>
+      <h2 id="e-areas" style="margin:0;font-size:clamp(28px,2.8vw,44px);font-weight:500;letter-spacing:-0.04em;line-height:1;color:#EEF4F1">Three threads.</h2>
+      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A">Creative → Commercial → Technology</span>
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:clamp(20px,2.4vw,36px)">
       <sc-for list="{{ areas }}" as="ar2" hint-placeholder-count="3">
         <article style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:16px">
-          <div data-card="" style="position:relative;overflow:hidden;aspect-ratio:4/3;border-radius:18px;border:1px solid #29292B;background:#141415">
+          <div data-card="" style="position:relative;overflow:hidden;aspect-ratio:16/10;max-height:260px;border-radius:18px;border:1px solid #213B30;background:#0D1A15">
             <div data-media="" style="position:absolute;inset:0;transition:transform 1.4s cubic-bezier(.2,.7,.2,1),filter 1s ease">
-              <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(120% 90% at 30% 0%,#242426 0%,#171718 55%,#121213 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">
-                <span style="position:absolute;left:14px;top:14px;width:12px;height:12px;border-left:1px solid #3C3C3F;border-top:1px solid #3C3C3F"></span>
-                <span style="position:absolute;right:14px;bottom:14px;width:12px;height:12px;border-right:1px solid #3C3C3F;border-bottom:1px solid #3C3C3F"></span>
-                <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:30px;color:#4A4A4D">{{ ar2.media }}</span>
-                <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.2em;color:#5E5E61">DROP GENUINE WORK</span>
+              <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(120% 90% at 30% 0%,#1B3128 0%,#11201A 55%,#0C1813 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">
+                <span style="position:absolute;left:14px;top:14px;width:12px;height:12px;border-left:1px solid #305544;border-top:1px solid #305544"></span>
+                <span style="position:absolute;right:14px;bottom:14px;width:12px;height:12px;border-right:1px solid #305544;border-bottom:1px solid #305544"></span>
+                <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:30px;color:#3D5E4F">{{ ar2.media }}</span>
+                <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.2em;color:#556F62">DROP GENUINE WORK</span>
               </div>
               <image-slot id="{{ ar2.slot }}" shape="rect" placeholder="Genuine work example" style="position:absolute;inset:0;width:100%;height:100%"></image-slot>
             </div>
           </div>
           <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-top:8px">
-            <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:26px;line-height:1;color:#6E6E70">{{ ar2.roman }}</span>
-            <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.16em;color:#D4B58A">{{ ar2.tag }}</span>
+            <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:26px;line-height:1;color:#61796D">{{ ar2.roman }}</span>
+            <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#34D399">{{ ar2.tag }}</span>
           </div>
-          <h3 style="margin:0;font-size:clamp(21px,1.75vw,26px);font-weight:500;letter-spacing:-0.025em;line-height:1.15;color:#F0F0F0">{{ ar2.title }}</h3>
-          <p style="margin:0;font-size:15px;line-height:1.62;color:#969696;text-wrap:pretty">{{ ar2.text }}</p>
-          <p style="margin:auto 0 0;padding-top:14px;border-top:1px solid #262628;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.06em;line-height:1.8;color:#8C8C8C">{{ ar2.keys }}</p>
+          <h3 style="margin:0;font-size:clamp(21px,1.75vw,26px);font-weight:500;letter-spacing:-0.025em;line-height:1.15;color:#EEF4F1">{{ ar2.title }}</h3>
+          <p style="margin:0;font-size:15px;line-height:1.62;color:#95A79E;text-wrap:pretty">{{ ar2.text }}</p>
+          <p style="margin:auto 0 0;padding-top:14px;border-top:1px solid #1D3429;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.06em;line-height:1.8;color:#8A9D94">{{ ar2.keys }}</p>
         </article>
       </sc-for>
     </div>
   </section>
 
-  <section data-card="" data-reveal="" aria-labelledby="e-bring" style="grid-column:{{ g.e_bring.c }};grid-row:{{ g.e_bring.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #303032;background:radial-gradient(520px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.05),transparent 62%),linear-gradient(180deg,#222224 0%,#1C1C1D 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3vw,44px);display:flex;flex-direction:column;justify-content:space-between;gap:32px">
+  <section data-card="" data-reveal="" aria-labelledby="e-bring" style="grid-column:{{ g.e_bring.c }};grid-row:{{ g.e_bring.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #264437;background:radial-gradient(520px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.05),transparent 62%),linear-gradient(180deg,#192E25 0%,#15281F 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3vw,48px);display:flex;flex-direction:column;justify-content:space-between;gap:32px">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(220px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.32),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
-    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8C8C8C">Six things</span>
+    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8A9D94">Six things</span>
     <div style="display:flex;flex-direction:column;gap:18px">
-      <h2 id="e-bring" style="margin:0;font-size:clamp(34px,3.6vw,60px);font-weight:500;letter-spacing:-0.048em;line-height:.98;color:#F0F0F0">
+      <h2 id="e-bring" style="margin:0;font-size:clamp(34px,3.6vw,60px);font-weight:500;letter-spacing:-0.048em;line-height:.98;color:#EEF4F1">
         <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block">What I bring</span></span>
-        <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.1em;color:#E8E1D5">to a team.</span></span>
+        <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.1em;color:#6EE7B7">to a team.</span></span>
       </h2>
-      <p style="margin:0;max-width:320px;font-size:15px;line-height:1.55;color:#A3A3A3">Less a list of skills. More what tends to happen when I'm in the room.</p>
+      <p style="margin:0;max-width:320px;font-size:15px;line-height:1.55;color:#A2B3AB">Less a list of skills. More what tends to happen when I'm in the room.</p>
     </div>
   </section>
   <sc-for list="{{ traits }}" as="tr" hint-placeholder-count="6">
-    <article data-card="" data-reveal="" style="grid-column:{{ tr.c }};grid-row:{{ tr.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.045),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(22px,2.2vw,32px);display:flex;flex-direction:column;justify-content:space-between;gap:24px">
+    <article data-card="" data-reveal="" style="grid-column:{{ tr.c }};grid-row:{{ tr.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.045),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(20px,2vw,30px);display:flex;flex-direction:column;justify-content:space-between;gap:24px">
       <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(200px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.3),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
-      <span aria-hidden="true" style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(36px,3vw,48px);line-height:.8;color:#4E4E51">{{ tr.roman }}</span>
+      <span aria-hidden="true" style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(36px,3vw,48px);line-height:.8;color:#426352">{{ tr.roman }}</span>
       <div style="display:flex;flex-direction:column;gap:10px">
-        <h3 style="margin:0;font-size:clamp(19px,1.5vw,22px);font-weight:500;letter-spacing:-0.02em;color:#F0F0F0">{{ tr.title }}</h3>
-        <p style="margin:0;max-width:440px;font-size:15px;line-height:1.6;color:#969696;text-wrap:pretty">{{ tr.text }}</p>
+        <h3 style="margin:0;font-size:clamp(19px,1.5vw,22px);font-weight:500;letter-spacing:-0.02em;color:#EEF4F1">{{ tr.title }}</h3>
+        <p style="margin:0;max-width:440px;font-size:15px;line-height:1.6;color:#95A79E;text-wrap:pretty">{{ tr.text }}</p>
       </div>
     </article>
   </sc-for>
 
-  <a data-card="" data-reveal="" href="#/contact" onClick="{{ goContact }}" onMouseEnter="{{ hov.e_next }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.e_next }}" onBlur="{{ unhov }}" style="grid-column:{{ g.e_next.c }};grid-row:{{ g.e_next.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(720px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.04),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3vw,48px);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;color:#F0F0F0">
+  <a data-card="" data-reveal="" href="#/contact" onClick="{{ goContact }}" onMouseEnter="{{ hov.e_next }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.e_next }}" onBlur="{{ unhov }}" style="grid-column:{{ g.e_next.c }};grid-row:{{ g.e_next.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(720px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.04),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3vw,48px);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;color:#EEF4F1">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(260px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.3),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
     <span style="display:flex;flex-direction:column;gap:clamp(16px,2vw,28px)">
-      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">Sound useful?</span>
-      <span style="font-size:clamp(48px,7vw,120px);font-weight:500;letter-spacing:-0.055em;line-height:.9;color:#F0F0F0;transform:{{ ar.e_next.shift }};transition:transform .8s cubic-bezier(.19,1,.22,1)">Let's <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;color:#E8E1D5">talk.</span></span>
+      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A">Sound useful?</span>
+      <span style="font-size:clamp(48px,7vw,120px);font-weight:500;letter-spacing:-0.055em;line-height:.9;color:#EEF4F1;transform:{{ ar.e_next.shift }};transition:transform .8s cubic-bezier(.19,1,.22,1)">Let's <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;color:#6EE7B7">talk.</span></span>
     </span>
     <span aria-hidden="true" style="position:relative;flex:0 0 auto;width:clamp(56px,5vw,72px);height:clamp(56px,5vw,72px);border-radius:50%;overflow:hidden;border:1px solid {{ ar.e_next.bd }};background:{{ ar.e_next.bg }};color:{{ ar.e_next.fg }};transition:background .45s ease,color .45s ease,border-color .45s ease"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-10px 0 0 -10px;transform:{{ ar.e_next.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-10px 0 0 -10px;transform:{{ ar.e_next.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span>
   </a>
@@ -463,65 +457,62 @@ image-slot:not([data-filled]):hover{opacity:.55}
 
 <sc-if value="{{ isContact }}" hint-placeholder-val="{{ false }}">
 <div data-screen-label="Contact" style="display:grid;grid-template-columns:{{ cols }};grid-auto-rows:{{ rows }};grid-auto-flow:dense;gap:clamp(8px,.9vw,14px)">
-  <section data-card="" data-reveal="" aria-labelledby="c-title" style="grid-column:{{ g.c_main.c }};grid-row:{{ g.c_main.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(820px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.04),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,4vw,64px);display:flex;flex-direction:column;justify-content:space-between;gap:clamp(40px,5vw,80px)">
+  <section data-card="" data-reveal="" aria-labelledby="c-title" style="grid-column:{{ g.c_main.c }};grid-row:{{ g.c_main.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(820px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.04),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(24px,3vw,48px);display:flex;flex-direction:column;justify-content:space-between;gap:clamp(40px,5vw,80px)">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(280px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.3),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
     <div style="display:flex;justify-content:space-between;gap:16px">
-      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">Contact</span>
-      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">Email is best</span>
+      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A">Contact</span>
+      
     </div>
-    <h1 id="c-title" style="margin:0;font-size:clamp(50px,8.4vw,150px);font-weight:500;letter-spacing:-0.058em;line-height:.9;color:#F0F0F0">
+    <h1 id="c-title" style="margin:0;font-size:clamp(50px,8.4vw,150px);font-weight:500;letter-spacing:-0.058em;line-height:.9;color:#EEF4F1">
       <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block">Good conversations</span></span>
-      <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.1em;letter-spacing:-0.03em;color:#E8E1D5">start somewhere.</span></span>
+      <span style="display:block;overflow:hidden;padding:0 .05em .12em;margin:0 -.05em -.12em"><span data-line="" style="display:block;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;font-size:1.1em;letter-spacing:-0.03em;color:#6EE7B7">start somewhere.</span></span>
     </h1>
-    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px 48px;padding-top:clamp(24px,2.4vw,36px);border-top:1px solid #262628">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px 48px;padding-top:clamp(24px,2.4vw,36px);border-top:1px solid #1D3429">
       <div style="flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:22px">
-        <p style="margin:0;max-width:540px;font-size:clamp(16px,1.3vw,19px);line-height:1.55;letter-spacing:-0.01em;color:#A3A3A3;text-wrap:pretty">Whether you've got an interesting idea, a role worth discussing or simply think our paths should cross, feel free to get in touch.</p>
-        <a href="{{ mailto }}" style="align-self:flex-start;font-size:clamp(22px,2.6vw,40px);font-weight:500;letter-spacing:-0.03em;color:#F0F0F0;padding-bottom:6px;border-bottom:1px solid #3A3A3D;overflow-wrap:anywhere;transition:border-color .4s ease" style-hover="color:#FFFFFF;border-color:#E8E1D5">{{ email }}</a>
+        <p style="margin:0;max-width:540px;font-size:clamp(16px,1.3vw,19px);line-height:1.55;letter-spacing:-0.01em;color:#A2B3AB;text-wrap:pretty">Whether you've got an interesting idea, a role worth discussing or simply think our paths should cross, feel free to get in touch.</p>
+        <a href="{{ mailto }}" style="align-self:flex-start;font-size:clamp(22px,2.6vw,40px);font-weight:500;letter-spacing:-0.03em;color:#EEF4F1;padding-bottom:6px;border-bottom:1px solid #2E5242;overflow-wrap:anywhere;transition:border-color .4s ease" style-hover="color:#FFFFFF;border-color:#6EE7B7">{{ email }}</a>
         <div style="display:flex;flex-wrap:wrap;gap:8px">
-          <button type="button" onClick="{{ copyEmail }}" aria-label="{{ copyAria }}" style="height:54px;padding:0 22px;border-radius:16px;border:0;background:#EDEDED;color:#0B0B0C;font-family:inherit;font-size:15px;font-weight:500;display:flex;align-items:center;gap:10px;cursor:pointer;box-shadow:inset 0 -2px 0 rgba(0,0,0,.08);transition:background .4s ease" style-hover="background:#FFFFFF">
+          <button type="button" onClick="{{ copyEmail }}" aria-label="{{ copyAria }}" style="height:54px;padding:0 22px;border-radius:16px;border:0;background:#34D399;color:#06100C;font-family:inherit;font-size:15px;font-weight:500;display:flex;align-items:center;gap:10px;cursor:pointer;box-shadow:inset 0 -2px 0 rgba(0,0,0,.08);transition:background .4s ease" style-hover="background:#6EE7B7">
             <span aria-live="polite">{{ copyLabel }}</span>
             <sc-if value="{{ notCopied }}" hint-placeholder-val="{{ true }}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"></rect><path d="M5 15V6a2 2 0 0 1 2-2h8"></path></svg></sc-if>
             <sc-if value="{{ copied }}" hint-placeholder-val="{{ false }}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 10 17l9-10"></path></svg></sc-if>
           </button>
-          <a href="{{ mailto }}" onMouseEnter="{{ hov.write }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.write }}" onBlur="{{ unhov }}" style="height:54px;padding:0 8px 0 22px;border-radius:16px;border:1px solid #303032;color:#D6D6D6;display:flex;align-items:center;gap:14px;font-size:15px;font-weight:500;transition:background .4s ease,border-color .4s ease,color .4s ease" style-hover="background:#202021;border-color:#46464A;color:#FFFFFF">
+          <a href="{{ mailto }}" onMouseEnter="{{ hov.write }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.write }}" onBlur="{{ unhov }}" style="height:54px;padding:0 8px 0 22px;border-radius:16px;border:1px solid #264437;color:#D3DFD9;display:flex;align-items:center;gap:14px;font-size:15px;font-weight:500;transition:background .4s ease,border-color .4s ease,color .4s ease" style-hover="background:#172B22;border-color:#3A6352;color:#FFFFFF">
             <span>Write an email</span>
-            <span aria-hidden="true" style="position:relative;width:38px;height:38px;border-radius:11px;background:#262628;color:#F0F0F0;overflow:hidden"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-6.5px 0 0 -6.5px;transform:{{ ar.write.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-6.5px 0 0 -6.5px;transform:{{ ar.write.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span>
+            <span aria-hidden="true" style="position:relative;width:38px;height:38px;border-radius:11px;background:#1D3429;color:#EEF4F1;overflow:hidden"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-6.5px 0 0 -6.5px;transform:{{ ar.write.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-6.5px 0 0 -6.5px;transform:{{ ar.write.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span>
           </a>
         </div>
       </div>
-      <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(56px,6vw,104px);line-height:.8;letter-spacing:-0.03em;color:#E8E1D5">Lorcan.</span>
+      <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:clamp(56px,6vw,104px);line-height:.8;letter-spacing:-0.03em;color:#6EE7B7">Lorcan.</span>
     </div>
   </section>
 
-  <a data-card="" data-reveal="" href="{{ linkHref }}" target="{{ linkTarget }}" rel="noopener noreferrer" onMouseEnter="{{ hov.c_link }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.c_link }}" onBlur="{{ unhov }}" style="grid-column:{{ g.c_link.c }};grid-row:{{ g.c_link.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.045),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(20px,2.2vw,32px);display:flex;flex-direction:column;justify-content:space-between;gap:20px;color:#F0F0F0">
+  <a data-card="" data-reveal="" href="{{ linkHref }}" target="{{ linkTarget }}" rel="noopener noreferrer" onMouseEnter="{{ hov.c_link }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.c_link }}" onBlur="{{ unhov }}" style="grid-column:{{ g.c_link.c }};grid-row:{{ g.c_link.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.045),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(20px,2vw,30px);display:flex;flex-direction:column;justify-content:space-between;gap:20px;color:#EEF4F1">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(200px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.3),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
-    <span style="display:flex;justify-content:space-between;align-items:center;gap:12px">
-      <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">{{ linkLabel }}</span>
-      <span aria-hidden="true" style="position:relative;flex:0 0 auto;width:40px;height:40px;border-radius:50%;overflow:hidden;border:1px solid {{ ar.c_link.bd }};background:{{ ar.c_link.bg }};color:{{ ar.c_link.fg }};transition:background .45s ease,color .45s ease,border-color .45s ease"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-6.5px 0 0 -6.5px;transform:{{ ar.c_link.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-6.5px 0 0 -6.5px;transform:{{ ar.c_link.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span>
-    </span>
-    <span style="font-size:clamp(20px,1.7vw,25px);font-weight:500;letter-spacing:-0.022em;line-height:1.2;color:#F0F0F0">{{ linkText }}</span>
+    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A">{{ linkLabel }}</span>
+    <span style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px"><span style="font-size:clamp(20px,1.7vw,25px);font-weight:500;letter-spacing:-0.022em;line-height:1.2;color:#EEF4F1">{{ linkText }}</span><span aria-hidden="true" style="position:relative;flex:0 0 auto;width:40px;height:40px;border-radius:50%;overflow:hidden;border:1px solid {{ ar.c_link.bd }};background:{{ ar.c_link.bg }};color:{{ ar.c_link.fg }};transition:background .45s ease,color .45s ease,border-color .45s ease"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-6.5px 0 0 -6.5px;transform:{{ ar.c_link.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-6.5px 0 0 -6.5px;transform:{{ ar.c_link.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span></span>
   </a>
 
-  <section data-card="" data-reveal="" aria-label="Local time" style="grid-column:{{ g.c_time.c }};grid-row:{{ g.c_time.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #303032;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.05),transparent 62%),linear-gradient(180deg,#222224 0%,#1C1C1D 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(20px,2.2vw,32px);display:flex;flex-direction:column;justify-content:space-between;gap:20px">
+  <section data-card="" data-reveal="" aria-label="Local time" style="grid-column:{{ g.c_time.c }};grid-row:{{ g.c_time.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #264437;background:radial-gradient(420px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.05),transparent 62%),linear-gradient(180deg,#192E25 0%,#15281F 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(20px,2vw,30px);display:flex;flex-direction:column;justify-content:space-between;gap:20px">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(200px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.32),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
-    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8C8C8C">Local time</span>
+    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8A9D94">Local time</span>
     <div style="display:flex;flex-direction:column">
-      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:10px 0;border-top:1px solid #303032">
-        <span style="font-size:14px;color:#A3A3A3">Ireland</span>
-        <span style="font-size:clamp(22px,1.9vw,28px);font-weight:400;letter-spacing:-0.02em;font-variant-numeric:tabular-nums;color:#F0F0F0">{{ tIE }}</span>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:10px 0;border-top:1px solid #264437">
+        <span style="font-size:14px;color:#A2B3AB">Ireland</span>
+        <span style="font-size:clamp(22px,1.9vw,28px);font-weight:400;letter-spacing:-0.02em;font-variant-numeric:tabular-nums;color:#EEF4F1">{{ tIE }}</span>
       </div>
-      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:10px 0;border-top:1px solid #303032">
-        <span style="font-size:14px;color:#A3A3A3">Netherlands</span>
-        <span style="font-size:clamp(22px,1.9vw,28px);font-weight:400;letter-spacing:-0.02em;font-variant-numeric:tabular-nums;color:#F0F0F0">{{ tNL }}</span>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:10px 0;border-top:1px solid #264437">
+        <span style="font-size:14px;color:#A2B3AB">Netherlands</span>
+        <span style="font-size:clamp(22px,1.9vw,28px);font-weight:400;letter-spacing:-0.02em;font-variant-numeric:tabular-nums;color:#EEF4F1">{{ tNL }}</span>
       </div>
     </div>
   </section>
 
-  <a data-card="" data-reveal="" href="#/" onClick="{{ goHome }}" onMouseEnter="{{ hov.c_home }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.c_home }}" onBlur="{{ unhov }}" style="grid-column:{{ g.c_home.c }};grid-row:{{ g.c_home.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #29292B;background:radial-gradient(520px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.045),transparent 62%),linear-gradient(180deg,#1A1A1B 0%,#151516 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(20px,2.2vw,32px);display:flex;flex-direction:column;justify-content:space-between;gap:20px;color:#F0F0F0">
+  <a data-card="" data-reveal="" href="#/" onClick="{{ goHome }}" onMouseEnter="{{ hov.c_home }}" onMouseLeave="{{ unhov }}" onFocus="{{ hov.c_home }}" onBlur="{{ unhov }}" style="grid-column:{{ g.c_home.c }};grid-row:{{ g.c_home.r }};position:relative;overflow:hidden;border-radius:clamp(20px,1.8vw,28px);border:1px solid #213B30;background:radial-gradient(520px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.045),transparent 62%),linear-gradient(180deg,#13241D 0%,#0F1C17 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 28px 56px -36px rgba(0,0,0,.95);padding:clamp(20px,2vw,30px);display:flex;flex-direction:column;justify-content:space-between;gap:20px;color:#EEF4F1">
     <span aria-hidden="true" style="position:absolute;inset:0;z-index:4;border-radius:inherit;padding:1px;pointer-events:none;background:radial-gradient(220px circle at var(--mx,-600px) var(--my,-600px),rgba(255,255,255,.3),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude"></span>
-    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#808080">Not quite yet?</span>
+    <span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7E948A">Not quite yet?</span>
     <span style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px">
-      <span style="font-size:clamp(20px,1.7vw,25px);font-weight:500;letter-spacing:-0.022em;line-height:1.2;color:#F0F0F0;transform:{{ ar.c_home.shift }};transition:transform .8s cubic-bezier(.19,1,.22,1)">Back to the start.</span>
+      <span style="font-size:clamp(20px,1.7vw,25px);font-weight:500;letter-spacing:-0.022em;line-height:1.2;color:#EEF4F1;transform:{{ ar.c_home.shift }};transition:transform .8s cubic-bezier(.19,1,.22,1)">Back to the start.</span>
       <span aria-hidden="true" style="position:relative;flex:0 0 auto;width:44px;height:44px;border-radius:50%;overflow:hidden;border:1px solid {{ ar.c_home.bd }};background:{{ ar.c_home.bg }};color:{{ ar.c_home.fg }};transition:background .45s ease,color .45s ease,border-color .45s ease"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.c_home.a }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:50%;top:50%;margin:-7px 0 0 -7px;transform:{{ ar.c_home.b }};transition:transform .6s cubic-bezier(.65,0,.35,1)"><path d="M7 17 17 7M8 7h9v9"></path></svg></span>
     </span>
   </a>
@@ -531,13 +522,13 @@ image-slot:not([data-filled]):hover{opacity:.55}
 </main>
 
 <footer style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px 28px;padding:clamp(18px,1.8vw,26px) clamp(12px,1.4vw,22px) clamp(8px,.8vw,12px)">
-  <span style="display:flex;align-items:center;gap:7px;color:#8C8C8C;font-size:13px">© 2026 Lorcan <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:16px;color:#BDBDBD">O'Neill</span></span>
+  <span style="display:flex;align-items:center;gap:7px;color:#8A9D94;font-size:13px">© 2026 Lorcan <span style="font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:16px;color:#BACAC2">O'Neill</span></span>
   <nav aria-label="Footer" style="display:flex;flex-wrap:wrap;gap:6px 22px">
     <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="4">
-      <a href="{{ item.href }}" onClick="{{ item.onClick }}" style="font-size:13px;color:#8C8C8C;transition:color .3s ease" style-hover="color:#F0F0F0">{{ item.label }}</a>
+      <a href="{{ item.href }}" onClick="{{ item.onClick }}" style="font-size:13px;color:#8A9D94;transition:color .3s ease" style-hover="color:#EEF4F1">{{ item.label }}</a>
     </sc-for>
   </nav>
-  <button type="button" onClick="{{ toTop }}" style="display:flex;align-items:center;gap:8px;padding:6px 0;border:0;background:none;cursor:pointer;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;color:#8C8C8C;transition:color .3s ease" style-hover="color:#F0F0F0">BACK TO TOP <span aria-hidden="true">↑</span></button>
+  <button type="button" onClick="{{ toTop }}" style="display:flex;align-items:center;gap:8px;padding:6px 0;border:0;background:none;cursor:pointer;font-family:'Geist Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.14em;color:#8A9D94;transition:color .3s ease" style-hover="color:#EEF4F1">BACK TO TOP <span aria-hidden="true">↑</span></button>
 </footer>
 
 </div>
@@ -827,14 +818,14 @@ class Component extends DCLogic {
       const on = hv === k;
       hov[k] = () => { if (this.state.hv !== k) this.setState({ hv: k }); };
       ar[k] = on
-        ? { a: 'translate(170%,-170%)', b: 'translate(0,0)', bg: '#F0F0F0', bgd: '#F0F0F0', fg: '#0B0B0C', bd: '#F0F0F0', shift: 'translateX(14px)' }
-        : { a: 'translate(0,0)', b: 'translate(-170%,170%)', bg: 'transparent', bgd: 'rgba(23,23,24,.55)', fg: '#D6D6D6', bd: '#3A3A3D', shift: 'none' };
+        ? { a: 'translate(170%,-170%)', b: 'translate(0,0)', bg: '#34D399', bgd: '#34D399', fg: '#06100C', bd: '#34D399', shift: 'translateX(14px)' }
+        : { a: 'translate(0,0)', b: 'translate(-170%,170%)', bg: 'transparent', bgd: 'rgba(23,23,24,.55)', fg: '#D3DFD9', bd: '#2E5242', shift: 'none' };
     });
     return {
       isHome: route === 'home', isAbout: route === 'about', isExperience: route === 'experience', isContact: route === 'contact',
       g,
       cols: bp === 0 ? 'repeat(12, minmax(0, 1fr))' : bp === 1 ? 'repeat(6, minmax(0, 1fr))' : 'repeat(2, minmax(0, 1fr))',
-      rows: bp === 0 ? 'minmax(clamp(200px, 16.5vw, 250px), auto)' : bp === 1 ? 'minmax(200px, auto)' : 'minmax(150px, auto)',
+      rows: bp === 0 ? 'minmax(clamp(180px, 15vw, 232px), auto)' : bp === 1 ? 'minmax(176px, auto)' : 'minmax(140px, auto)',
       isWide: !narrow, isNarrow: narrow,
       navRef: this.navRef,
       indX: ind.x + 'px', indW: ind.w + 'px', indO: ind.o,
@@ -847,7 +838,7 @@ class Component extends DCLogic {
         const on = to === id;
         return {
           label, href, onClick: this.link(id), current: on ? 'page' : 'false', roman: ROMAN[i],
-          color: on ? '#F0F0F0' : '#8C8C8C', mcolor: on ? '#E8E1D5' : '#F0F0F0', tab: menu ? 0 : -1,
+          color: on ? '#EEF4F1' : '#8A9D94', mcolor: on ? '#6EE7B7' : '#EEF4F1', tab: menu ? 0 : -1,
           mo: menu ? 1 : 0, mt: menu ? 'none' : 'translateY(28px)', md: (menu ? 80 + i * 60 : 0) + 'ms'
         };
       }),
@@ -858,7 +849,7 @@ class Component extends DCLogic {
       threads: THREADS.map(([title, text, tag], i) => {
         const on = thread === i;
         return { title, text, tag, roman: ROMAN[i], exp: on ? 'true' : 'false', on: () => { if (this.state.thread !== i) this.setState({ thread: i }); },
-          color: on ? '#F0F0F0' : '#8C8C8C', ncolor: on ? '#E8E1D5' : '#5E5E61', rows: on ? '1fr' : '0fr', op: on ? 1 : 0, tf: on ? 'none' : 'translateY(-6px)' };
+          color: on ? '#EEF4F1' : '#8A9D94', ncolor: on ? '#6EE7B7' : '#556F62', rows: on ? '1fr' : '0fr', op: on ? 1 : 0, tf: on ? 'none' : 'translateY(-6px)' };
       }),
       story: STORY.map(([title, text], i) => ({ title, text, roman: ROMAN[i] })),
       areas: AREAS.map(([title, text, keys2, tag, media, slot], i) => ({ title, text, keys: keys2, tag, media, slot, roman: ROMAN[i] })),
